@@ -16,6 +16,7 @@ export default function Login() {
                                     className="w-full p-2 rounded-md border"
                                     name="email"
                                     id="email"
+                                    placeholder="Email"
                                 />
                             </div>
                             <div className="py-4">
@@ -25,22 +26,19 @@ export default function Login() {
                                     name="password"
                                     id="password"
                                     className="w-full p-2 rounded-md border"
+                                    placeholder="Password"
                                 />
                             </div>
                             <button
                                 type="submit"
-                                className="w-full bg-base-300 mt-4 text-bg-body-secondary p-2 rounded-lg mb-6 hover:bg-base-200"
+                                className="w-full bg-primary-content mt-4 text-bg-body-secondary p-2 rounded-lg mb-6 hover:bg-info"
                             >
-                                Login
+                               <b>Login</b> 
                             </button>
 
                             <div className="text-center text-bg-body-secondary ">
                                 Don't have an account?
-                                <a href='/register' className="font-bold mx-2 text-bg-body-secondary hover:text-base-300">Sign up</a>
-                            </div>
-                            <div className="text-center justify-content-center  text-bg-body-secondary ">
-                                <p>OR</p>
-                                <div id="google-login"></div>
+                                <a href='/register' className="font-bold mx-2 text-bg-body-secondary hover:text-info">Register</a>
                             </div>
                         </div>
 

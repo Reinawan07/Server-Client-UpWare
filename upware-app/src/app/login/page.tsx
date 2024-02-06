@@ -3,7 +3,7 @@ import Navbar from "@/components/navbar";
 export default function Login() {
     return (
         <>
-        <Navbar/>
+            <Navbar />
             <div className="flex items-center justify-center min-h-screen">
                 <form>
                     <div className="relative flex flex-col m-6 space-y-8 bg-base-200 shadow-2xl rounded-2xl md:flex-row md:space-y-0">
@@ -36,7 +36,7 @@ export default function Login() {
                                 type="submit"
                                 className="w-full mt-4 bg-primary p-2 rounded-lg mb-6 hover:bg-secondary"
                             >
-                               <b>Login</b> 
+                                <b>Login</b>
                             </button>
 
                             <div className="text-center text-bg-body-secondary ">
@@ -52,8 +52,10 @@ export default function Login() {
                                 className="w-[420px] h-full hidden rounded-r-2xl md:block object-cover"
                             />
                         </div>
+
                     </div>
                 </form>
+
             </div>
         </>
     );

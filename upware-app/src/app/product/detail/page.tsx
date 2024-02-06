@@ -1,3 +1,4 @@
+import Wishlist from "@/components/wishlist";
 
 export default function DetailProduct() {
     return (
@@ -71,9 +72,9 @@ export default function DetailProduct() {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="flex">
+                                <div className="flex justify-between items-center">
                                     <span className="title-font font-medium text-2xl">$58.00</span>
-                                    <button className="btn text-white btn-primary hover:bg-secondary">Add Wishlist</button>
+                                   <Wishlist/>
                                 </div>
                             </div>
                     </div>

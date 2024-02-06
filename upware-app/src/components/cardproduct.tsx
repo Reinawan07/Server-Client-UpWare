@@ -9,7 +9,10 @@ export default function CardProduct() {
             <div className="card-body">
                 <h2 className="card-title">Shoes!</h2>
                 <p>If a dog chews shoes whose shoes does he choose?</p>
-                <Wishlist />
+                <div className="flex justify-between items-center">
+                    <span className="title-font font-medium text-2xl">$58.00</span>
+                    <Wishlist />
+                </div>
             </div>
         </div>
     )

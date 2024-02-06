@@ -34,14 +34,14 @@ export default function Login() {
                             </div>
                             <button
                                 type="submit"
-                                className="w-full bg-primary-content mt-4 text-bg-body-secondary p-2 rounded-lg mb-6 hover:bg-info"
+                                className="w-full mt-4 bg-primary p-2 rounded-lg mb-6 hover:bg-secondary"
                             >
                                <b>Login</b> 
                             </button>
 
                             <div className="text-center text-bg-body-secondary ">
                                 Don't have an account?
-                                <a href='/register' className="font-bold mx-2 text-bg-body-secondary hover:text-info">Register</a>
+                                <a href='/register' className="font-bold mx-2 text-bg-primary hover:text-secondary">Register</a>
                             </div>
                         </div>
 

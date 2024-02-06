@@ -59,14 +59,14 @@ export default function Register() {
                             
                             <button
                                 type="submit"
-                                className="font-bold w-full bg-primary-content mt-4 text-bg-body-secondary p-2 rounded-lg mb-6 hover:bg-info"
+                                className="w-full mt-4 bg-primary p-2 rounded-lg mb-6 hover:bg-secondary"
                             >
                                 Register
                             </button>
 
                             <div className="text-center text-bg-body-secondary ">
                                 Have account?
-                                <a href="/login" className="font-bold mx-2 text-bg-body-secondary hover:text-info">Login</a>
+                                <a href="/login" className="font-bold mx-2 text-bg-primary hover:text-secondary">Login</a>
                             </div>
                         </div>
 

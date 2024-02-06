@@ -1,12 +1,10 @@
 import Banner from "@/components/banner";
 import DetailInformasi from "@/components/detailinformasi";
 import Footer from "@/components/footer";
-import Navbar from "@/components/navbar";
 
 export default function Home() {
   return (
     <>
-      <Navbar />
       <Banner />
       <div className="flex w-full px-16 mt-14 mb-10">
         <div className="flex-1 pe-10 items-center">

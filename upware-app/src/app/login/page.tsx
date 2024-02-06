@@ -1,10 +1,8 @@
-import Navbar from "@/components/navbar";
 import Link from "next/link";
 
 export default function Login() {
     return (
         <>
-            <Navbar />
             <div className="flex items-center justify-center min-h-screen">
                 <form>
                     <div className="relative flex flex-col m-6 space-y-8 bg-base-200 shadow-2xl rounded-2xl md:flex-row md:space-y-0">

@@ -1,11 +1,8 @@
 import ListWishlist from "@/components/listwishlist";
-import Navbar from "@/components/navbar";
 
 export default function Wishlist() {
     return (
         <>
-            <Navbar />
-
             <div className="overflow-x-auto">
                 <table className="table">
                     {/* head */}

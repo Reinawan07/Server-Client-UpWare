@@ -1,4 +1,4 @@
-import ListWishlist from "@/components/listwishlist";
+import ListWishlist from "@/components/ListWishlist";
 
 export default function Wishlist() {
     return (

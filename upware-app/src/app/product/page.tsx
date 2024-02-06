@@ -1,5 +1,5 @@
-import CardProduct from "@/components/cardproduct";
-import Search from "@/components/search";
+import CardProduct from "@/components/CardProduct";
+import Search from "@/components/Search";
 
 export default function Product() {
     return (

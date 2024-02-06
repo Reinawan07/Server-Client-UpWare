@@ -1,6 +1,6 @@
+import SeeAllProduct from "@/components/SeeAllProduct";
 import Banner from "@/components/banner";
 import DetailInformasi from "@/components/detailinformasi";
-import Footer from "@/components/footer";
 
 export default function Home() {
   return (
@@ -21,6 +21,7 @@ export default function Home() {
           </div>
         </div>
       </div>
+      <SeeAllProduct/>
     </>
   );
 }

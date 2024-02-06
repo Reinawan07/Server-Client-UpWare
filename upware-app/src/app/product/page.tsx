@@ -5,7 +5,7 @@ export default function Product() {
     return (
         <>
             <Navbar />
-            <div className="w-full min-h-screen flex flex-col gap-10 justify-start items-start py-10 px-16 pt-24">
+            <div className="w-full min-h-screen flex flex-col gap-10 justify-start items-start px-20 pt-7">
                 <div className="w-full flex justify-center">
                     <div className="w-1/2">
                         <form className="w-full">

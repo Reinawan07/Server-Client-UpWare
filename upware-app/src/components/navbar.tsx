@@ -1,5 +1,6 @@
 'use client'
 
+import Link from "next/link";
 import { useEffect, useState } from "react";
 
 
@@ -24,11 +25,11 @@ export default function Navbar() {
         <>
             <div className="navbar bg-base-100 border-b shadow-xl mb-5 sticky top-0">
                 <div className="navbar-start">
-                    <a href="/" className="btn btn-ghost text-xl"><b>UpWare</b></a>
+                    <Link href="/" className="btn btn-ghost text-xl"><b>UpWare</b></Link>
                 </div>
                 <div className="navbar-center">
-                    <a href="/product" className="btn btn-ghost text-lg">Product</a>
-                    <a href="/wishlist" className="btn btn-ghost text-lg">Wishlist</a>
+                    <Link href="/product" className="btn btn-ghost text-lg">Product</Link>
+                    <Link href="/wishlist" className="btn btn-ghost text-lg">Wishlist</Link>
                 </div>
                 <div className="navbar-end">
 
@@ -44,13 +45,13 @@ export default function Navbar() {
                         <svg className="swap-off fill-current w-8 h-8" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21.64,13a1,1,0,0,0-1.05-.14,8.05,8.05,0,0,1-3.37.73A8.15,8.15,0,0,1,9.08,5.49a8.59,8.59,0,0,1,.25-2A1,1,0,0,0,8,2.36,10.14,10.14,0,1,0,22,14.05,1,1,0,0,0,21.64,13Zm-9.5,6.69A8.14,8.14,0,0,1,7.08,5.22v.27A10.15,10.15,0,0,0,17.22,15.63a9.79,9.79,0,0,0,2.1-.22A8.11,8.11,0,0,1,12.14,19.73Z" /></svg>
                     </label>
 
-                    <a href="/login">
+                    <Link href="/login">
                         <button className="btn btn-ghost btn-circle">
                             <svg className="w-6 h-6 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
                                 <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M16 12H4m12 0-4 4m4-4-4-4m3-4h2a3 3 0 0 1 3 3v10a3 3 0 0 1-3 3h-2" />
                             </svg>
                         </button>
-                    </a>
+                    </Link>
 
                 </div>
             </div>

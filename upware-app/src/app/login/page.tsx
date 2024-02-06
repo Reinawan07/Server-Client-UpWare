@@ -1,4 +1,5 @@
 import Navbar from "@/components/navbar";
+import Link from "next/link";
 
 export default function Login() {
     return (
@@ -41,7 +42,7 @@ export default function Login() {
 
                             <div className="text-center text-bg-body-secondary ">
                                 Don't have an account?
-                                <a href='/register' className="font-bold mx-2 text-bg-primary hover:text-secondary">Register</a>
+                                <Link href='/register' className="font-bold mx-2 text-bg-primary hover:text-secondary">Register</Link>
                             </div>
                         </div>
 

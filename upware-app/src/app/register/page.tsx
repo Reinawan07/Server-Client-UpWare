@@ -1,4 +1,5 @@
 import Navbar from "@/components/navbar";
+import Link from "next/link";
 
 export default function Register() {
     return (
@@ -66,7 +67,7 @@ export default function Register() {
 
                             <div className="text-center text-bg-body-secondary ">
                                 Have account?
-                                <a href="/login" className="font-bold mx-2 text-bg-primary hover:text-secondary">Login</a>
+                                <Link href="/login" className="font-bold mx-2 text-bg-primary hover:text-secondary">Login</Link>
                             </div>
                         </div>
 

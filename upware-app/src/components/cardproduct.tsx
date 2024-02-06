@@ -1,4 +1,4 @@
-import Wishlist from "./wishlist";
+import ButtonWishlist from "./ButtonWishlist";
 
 export default function CardProduct() {
     return (
@@ -11,7 +11,7 @@ export default function CardProduct() {
                 <p>If a dog chews shoes whose shoes does he choose?</p>
                 <div className="flex justify-between items-center">
                     <span className="title-font font-medium text-2xl">$58.00</span>
-                    <Wishlist />
+                    <ButtonWishlist />
                 </div>
             </div>
         </div>

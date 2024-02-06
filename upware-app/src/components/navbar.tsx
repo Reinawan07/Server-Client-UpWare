@@ -23,7 +23,7 @@ export default function Navbar() {
 
     return (
         <>
-            <div className="navbar bg-base-100 border-b shadow-xl mb-5 sticky top-0">
+            <div className="navbar bg-base-100 border-b shadow-xl mb-5 sticky top-0 z-50">
                 <div className="navbar-start">
                     <Link href="/" className="btn btn-ghost text-xl"><b>UpWare</b></Link>
                 </div>
@@ -58,3 +58,4 @@ export default function Navbar() {
         </>
     );
 }
+

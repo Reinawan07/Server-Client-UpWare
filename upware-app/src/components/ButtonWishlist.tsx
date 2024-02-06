@@ -1,4 +1,4 @@
-export default function Wishlist() {
+export default function ButtonWishlist() {
     return (
         <>
             <div className="card-actions justify-end">

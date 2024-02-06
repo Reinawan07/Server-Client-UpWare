@@ -3,7 +3,7 @@ import ListWishlist from "@/components/listwishlist";
 export default function Wishlist() {
     return (
         <>
-            <div className="overflow-x-auto">
+            <div className="overflow-x-auto mb-10">
                 <table className="table">
                     {/* head */}
                     <thead>

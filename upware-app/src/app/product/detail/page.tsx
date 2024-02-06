@@ -1,4 +1,4 @@
-import Wishlist from "@/components/wishlist";
+import ButtonWishlist from "@/components/ButtonWishlist";
 
 export default function DetailProduct() {
     return (
@@ -74,7 +74,7 @@ export default function DetailProduct() {
                                 </div>
                                 <div className="flex justify-between items-center">
                                     <span className="title-font font-medium text-2xl">$58.00</span>
-                                   <Wishlist/>
+                                   <ButtonWishlist/>
                                 </div>
                             </div>
                     </div>

@@ -27,7 +27,7 @@ export default function Navbar() {
                     <a href="/" className="btn btn-ghost text-xl"><b>UpWare</b></a>
                 </div>
                 <div className="navbar-center">
-                    <a href="#" className="btn btn-ghost text-lg">Product</a>
+                    <a href="/product" className="btn btn-ghost text-lg">Product</a>
                     <a href="#" className="btn btn-ghost text-lg">Wishlist</a>
                 </div>
                 <div className="navbar-end">

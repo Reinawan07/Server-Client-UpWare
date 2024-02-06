@@ -1,6 +1,9 @@
+import Navbar from "@/components/navbar";
+
 export default function Register() {
     return (
         <>
+            <Navbar />
             <div className="flex items-center justify-center min-h-screen">
                 <form>
                     <div className="relative flex flex-col m-6 space-y-8 bg-base-200 shadow-2xl rounded-2xl md:flex-row md:space-y-0">
@@ -63,13 +66,13 @@ export default function Register() {
 
                             <div className="text-center text-bg-body-secondary ">
                                 Have account?
-                                <a href="#" className="font-bold mx-2 text-bg-body-secondary hover:text-info">Login</a>
+                                <a href="/login" className="font-bold mx-2 text-bg-body-secondary hover:text-info">Login</a>
                             </div>
                         </div>
 
                         <div className="relative bg-base-300 rounded-md">
                             <img
-                                src="https://awsimages.detik.net.id/community/media/visual/2023/04/12/tupperware.jpeg?w=600&q=90"
+                                src="https://images.unsplash.com/photo-1585083969600-495ee7e3604b?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                                 alt="img"
                                 className="w-[420px] h-full hidden rounded-r-2xl md:block object-cover"
                             />

@@ -1,19 +1,7 @@
 import Link from "next/link";
 import ButtonWishlist from "./ButtonWishlist";
+import { Products } from "@/db/models/product";
 
-interface Products {
-    id: string;
-    name: string;
-    price: number;
-    thumbnail: string;
-    excerpt: string;
-    description: string;
-    slug: string;
-    tags: string[];
-    images: string[];
-    createdAt: Date;
-    updatedAt: Date;
-}
 
 export default function CardProduct({ product }: { product: Products }) {
     return (

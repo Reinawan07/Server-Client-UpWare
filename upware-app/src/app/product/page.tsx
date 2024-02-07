@@ -1,19 +1,7 @@
 import CardProduct from "@/components/CardProduct";
 import Search from "@/components/Search";
+import { Products } from "@/db/models/product";
 
-interface Products {
-    id: string;
-    name: string;
-    price: number;
-    thumbnail: string;
-    excerpt: string;
-    description: string;
-    slug: string;
-    tags: string[];
-    images: string[];
-    createdAt: Date;
-    updatedAt: Date;
-}
 
 async function getProducts(): Promise<Products[]> {
     const response = await fetch("http://localhost:3001/products");

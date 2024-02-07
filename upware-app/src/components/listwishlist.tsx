@@ -1,7 +1,7 @@
-import { WishlistModel } from "@/db/models/wishlist";
+import { WishlistInterface } from "@/db/models/wishlist";
 
 
-export default function ListWishlist({ wishlist }: { wishlist: WishlistModel }) {
+export default function ListWishlist({ wishlist }: { wishlist: WishlistInterface }) {
     
     
     return (

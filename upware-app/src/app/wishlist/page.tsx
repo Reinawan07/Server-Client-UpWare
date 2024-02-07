@@ -1,8 +1,8 @@
 import ListWishlist from "@/components/ListWishlist";
-import { WishlistModel } from "@/db/models/wishlist";
+import { WishlistInterface } from "@/db/models/wishlist";
 
 
-async function getWishlist(): Promise<WishlistModel[]> {
+async function getWishlist(): Promise<WishlistInterface[]> {
     const response = await fetch("http://localhost:3001/wishlist", { cache: "no-store" });
     return response.json();
 

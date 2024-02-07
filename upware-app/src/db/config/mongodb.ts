@@ -1,26 +1,24 @@
-import { MongoClient } from 'mongodb';
-import dotenv from 'dotenv';
 
-dotenv.config({
-	path: __dirname + '/../../../.env.local',
+const { MongoClient, ServerApiVersion } = require('mongodb');
+const uri = process.env.MONGO_URI;
+
+const client = new MongoClient(uri, {
+    serverApi: {
+        version: ServerApiVersion.v1,
+        strict: true,
+        deprecationErrors: true,
+    }
 });
 
-const connectionString = process.env.MONGO_URI;
+// let db;
+// async function connect() {
+//     try {
+//         const database = client.db('Ch2');
+//         db = database;
+//         return database;
+//     } catch (error) {
+//         console.log(error);
+//     }
+// }
 
-let client: MongoClient;
-export const getMongoClientInstance = async () => {
-	if (!connectionString) {
-		throw new Error('MONGO_URI is not defined');
-	}
-	if (!client) {
-		client = new MongoClient(connectionString);
-		await client.connect();
-	}
-	return client;
-};
-
-export const getDB = async () => {
-	const client = await getMongoClientInstance();
-	const db = client.db("Ch2");
-	return db;
-};
+export const database = client.db('P3Ch2');

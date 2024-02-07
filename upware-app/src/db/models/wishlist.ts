@@ -1,6 +1,6 @@
 import { ObjectId } from "mongodb";
 
-export interface WishlistModel {
+export interface WishlistInterface {
     _id: ObjectId;
     userId: ObjectId;
     productId: ObjectId;

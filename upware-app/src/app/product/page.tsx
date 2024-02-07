@@ -4,10 +4,9 @@ import { Products } from "@/db/models/product";
 
 
 async function getProducts(): Promise<Products[]> {
-    const response = await fetch("http://localhost:3001/products");
+    const response = await fetch("http://localhost:3001/products",{cache: "no-store"});
     return response.json();
 }
-
 
 export default async function Product() {
     const products = await getProducts();

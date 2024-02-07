@@ -7,7 +7,9 @@ export interface UserInterface {
     username: string;
     email: string;
     password: string;
-}
+};
+
+type NewInput = Omit<UserInterface, "_id">
 
 class UserModel {
     static getCollection() {
@@ -21,12 +23,17 @@ class UserModel {
     static async getById(id: string) {
         return await this.getCollection().findOne({
             _id: new ObjectId(id)
-        }) as UserInterface;
+        }) as UserInterface | null;
     }
 
-    static async register(userData: UserInterface) {
-        return await this.getCollection().insertOne(userData);
-
+    static async register(newUser: NewInput) {
+       const result = await this.getCollection().insertOne(newUser);
+       console.log(result);
+       
+       return {
+            _id: result.insertedId,
+            ...newUser
+       } as UserInterface; 
     }
 }
 

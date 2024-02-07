@@ -1,15 +1,22 @@
-export default function ListWishlist() {
+import { WishlistModel } from "@/db/models/wishlist";
+
+
+export default function ListWishlist({ wishlist }: { wishlist: WishlistModel }) {
+    
+    
     return (
         <>
             <tbody>
                 {/* row */}
                 <tr>
-                    
+
                     <td>
                         <div className="flex items-center gap-3">
                             <div className="avatar">
                                 <div className="mask mask-squircle w-12 h-12">
-                                    <img src="/tailwind-css-component-profile-2@56w.png" alt="Avatar Tailwind CSS Component" />
+                                    <img
+                                        src="/tailwind-css-component-profile-2@56w.png"
+                                        alt="Avatar Tailwind CSS Component" />
                                 </div>
                             </div>
                             <div>

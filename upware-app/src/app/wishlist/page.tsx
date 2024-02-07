@@ -1,6 +1,17 @@
 import ListWishlist from "@/components/ListWishlist";
+import { WishlistModel } from "@/db/models/wishlist";
 
-export default function Wishlist() {
+
+async function getWishlist(): Promise<WishlistModel[]> {
+    const response = await fetch("http://localhost:3001/wishlist", { cache: "no-store" });
+    return response.json();
+
+}
+
+
+export default async function Wishlist() {
+    const wishlists = await getWishlist();
+
     return (
         <>
             <div className="overflow-x-auto mb-10">
@@ -8,7 +19,7 @@ export default function Wishlist() {
                     {/* head */}
                     <thead>
                         <tr>
-                            
+
                             <th>Name</th>
                             <th>Deskription</th>
                             <th>Price</th>
@@ -16,7 +27,9 @@ export default function Wishlist() {
                             <th></th>
                         </tr>
                     </thead>
-                    <ListWishlist/>
+                    {wishlists.map((wishlist) => (
+                        <ListWishlist wishlist={wishlist} />
+                    ))}
 
                 </table>
             </div>

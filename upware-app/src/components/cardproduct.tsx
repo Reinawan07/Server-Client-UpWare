@@ -1,8 +1,8 @@
 import Link from "next/link";
 import ButtonWishlist from "./ButtonWishlist";
-import { Products } from "@/db/models/product";
+import { ProductsModel } from "@/db/models/product";
 
-export default function CardProduct({ product }: { product: Products }) {
+export default function CardProduct({ product }: { product: ProductsModel }) {
     const maxDescriptionLength = 100;
 
     const description = product.description.length > maxDescriptionLength

@@ -1,167 +1,235 @@
 {
-    "users": [],
-    "wishlist": [],
-    "products": [
-      {
-        "name": "PRESSURE COOKER WITH GIFT",
-        "slug": "pressure-cooker-with-gift",
-        "description": "Alat masak dengan fitur modern dan elegan dari Upware Indonesia.",
-        "excerpt": "Produk Upware dilindungi oleh Upware Lifetime Warranty / Garansi Seumur Hidup Upware. Hal ini berarti, jika produk Upware rusak atau cacat dalam pemakaian normal non komersial (sesuai dengan fungsinya), maka dapat diklaim untuk mendapatkan penggantiannya secara gratis di Business Center terdekat",
-        "price": 6900000,
-        "tags": ["upware", "cookware"],
-        "brand": "UpWare",
-        "thumbnail": "https://shop.tupperware.co.id/media/catalog/product/cache/d659501601eaa628c35b4c5676282018/c/7/c7bf834eb57657a0c7e48635bb7bc9ba85d21366f0ef8cb45a1a0f1caa3a745d.jpeg",
-        "images": [
-          "https://shop.tupperware.co.id/media/catalog/product/cache/d659501601eaa628c35b4c5676282018/8/e/8e5f45c91b1f35a666fa0699a5809259b8ec0080106ca0ebff07f1fd6001bae5.jpeg",
-          "https://shop.tupperware.co.id/media/catalog/product/cache/d659501601eaa628c35b4c5676282018/c/7/c7bf834eb57657a0c7e48635bb7bc9ba85d21366f0ef8cb45a1a0f1caa3a745d.jpeg"
-        ],
-        "createdAt": "2024-01-22T13:15:24.887Z",
-        "updatedAt": "2024-01-25T18:19:54.047Z"
-      },
-      {
-        "name": "TCHEF FRY PAN",
-        "slug": "tchef-fry-pan",
-        "description": "Memasak semakin menyenangkan dengan TChef Fry Pan",
-        "excerpt": "Produk Upware dilindungi oleh Upware Lifetime Warranty / Garansi Seumur Hidup Upware. Hal ini berarti, jika produk Upware rusak atau cacat dalam pemakaian normal non komersial (sesuai dengan fungsinya), maka dapat diklaim untuk mendapatkan penggantiannya secara gratis di Business Center terdekat",
-        "price": 2200000,
-        "tags": ["upware", "cookware"],
-        "brand": "UpWare",
-        "thumbnail": "https://shop.tupperware.co.id/media/catalog/product/cache/d659501601eaa628c35b4c5676282018/6/e/6e242bbfa28481ff9184e328722673b9a1a71050b0ffc815c4db19f76a1a6ad0.jpeg",
-        "images": [
-          "https://shop.tupperware.co.id/media/catalog/product/cache/d659501601eaa628c35b4c5676282018/2/b/2be2eb5ddbfff81ff54b031c48cb87b838c6e61ace9ab031efba38e8e3f4e237.jpeg",
-          "https://shop.tupperware.co.id/media/catalog/product/cache/d659501601eaa628c35b4c5676282018/6/e/6e242bbfa28481ff9184e328722673b9a1a71050b0ffc815c4db19f76a1a6ad0.jpeg"
-        ],
-        "createdAt": "2024-01-22T13:15:24.887Z",
-        "updatedAt": "2024-01-25T18:19:54.047Z"
-      },
-      {
-        "name": "TWINKLE TUP",
-        "slug": "twinkle-tup",
-        "description": "Snack tetap fresh & higienis berkat seal ketat udara dan cairan",
-        "excerpt": "Produk Upware dilindungi oleh Upware Lifetime Warranty / Garansi Seumur Hidup Upware. Hal ini berarti, jika produk Upware rusak atau cacat dalam pemakaian normal non komersial (sesuai dengan fungsinya), maka dapat diklaim untuk mendapatkan penggantiannya secara gratis di Business Center terdekat",
-        "price": 195000,
-        "tags": ["upware", "kids"],
-        "brand": "UpWare",
-        "thumbnail": "https://shop.tupperware.co.id/media/catalog/product/cache/d659501601eaa628c35b4c5676282018/3/9/39760283756274c639e717e1beada340852b74d180916eccfef0a941793502b7.jpeg",
-        "images": [
-          "https://shop.tupperware.co.id/media/catalog/product/cache/d659501601eaa628c35b4c5676282018/e/9/e91a853f355f1e42101d0e87e26dfdbb61948362cfa1ba1f10db819b0042c1c8.jpeg",
-          "https://shop.tupperware.co.id/media/catalog/product/cache/d659501601eaa628c35b4c5676282018/3/9/39760283756274c639e717e1beada340852b74d180916eccfef0a941793502b7.jpeg"
-        ],
-        "createdAt": "2024-01-22T13:15:24.887Z",
-        "updatedAt": "2024-01-25T18:19:54.047Z"
-      },
-      {
-        "name": "TWINKLE SIPPY CUP",
-        "slug": "twinkle-sippy-cup",
-        "description": "Training cup untuk bayi 6 bulan ke atas. sekaligus persiapan bayi 6 bulan ke atas memulai MPASI. Berbahan material yang aman dan dengan desain ergonomis sangat nyaman dan sesuai untuk usia bayi",
-        "excerpt": "Produk Upware dilindungi oleh Upware Lifetime Warranty / Garansi Seumur Hidup Upware. Hal ini berarti, jika produk Upware rusak atau cacat dalam pemakaian normal non komersial (sesuai dengan fungsinya), maka dapat diklaim untuk mendapatkan penggantiannya secara gratis di Business Center terdekat",
-        "price": 215000,
-        "tags": ["upware", "kids"],
-        "brand": "UpWare",
-        "thumbnail": "https://shop.tupperware.co.id/media/catalog/product/cache/d659501601eaa628c35b4c5676282018/7/7/777c7d5d489e85f9257564ddcf15914c73fada809d7d3547316f9cee48fe6e07.jpeg",
-        "images": [
-          "https://shop.tupperware.co.id/media/catalog/product/cache/d659501601eaa628c35b4c5676282018/4/a/4a704b7421c388c061d67d5d8f2be7a8b5e07a33478337697fab3358f24fd292.jpeg",
-          "https://shop.tupperware.co.id/media/catalog/product/cache/d659501601eaa628c35b4c5676282018/7/7/777c7d5d489e85f9257564ddcf15914c73fada809d7d3547316f9cee48fe6e07.jpeg"
-        ],
-        "createdAt": "2024-01-22T13:15:24.887Z",
-        "updatedAt": "2024-01-25T18:19:54.047Z"
-      },
-      {
-        "name": "STYLISH LUNCH SET WITH GIFT",
-        "slug": "stylish-lunch-set-with-gift",
-        "description": "Satu set kotak makan lengkap dalam tas compact berdesain manis, pelengkap lifestyle keseharianmu!",
-        "excerpt": "Produk Upware dilindungi oleh Upware Lifetime Warranty / Garansi Seumur Hidup Upware. Hal ini berarti, jika produk Upware rusak atau cacat dalam pemakaian normal non komersial (sesuai dengan fungsinya), maka dapat diklaim untuk mendapatkan penggantiannya secara gratis di Business Center terdekat",
-        "price": 275000,
-        "tags": ["upware", "onthego"],
-        "brand": "UpWare",
-        "thumbnail": "https://shop.tupperware.co.id/media/catalog/product/cache/d659501601eaa628c35b4c5676282018/7/9/7910d240d344751332770b6b8174d4fed513bc133134fef2c8cdd1173c1760d5.jpeg",
-        "images": [
-          "https://shop.tupperware.co.id/media/catalog/product/cache/d659501601eaa628c35b4c5676282018/a/4/a431d0c0daf6420a0261b6dee669c3e8f77968f80dbf918bd2f4bb9a3769885b.jpeg",
-          "https://shop.tupperware.co.id/media/catalog/product/cache/d659501601eaa628c35b4c5676282018/7/9/7910d240d344751332770b6b8174d4fed513bc133134fef2c8cdd1173c1760d5.jpeg"
-        ],
-        "createdAt": "2024-01-22T13:15:24.887Z",
-        "updatedAt": "2024-01-25T18:19:54.047Z"
-      },
-      {
-        "name": "FASHION ECO 500 ML (4) WITH STRAP & WITH GIFT",
-        "slug": "fashion-eco-500-ml-4-with-strap-with-gift",
-        "description": "1 botol, 2 gaya Setiap Fashion Eco Bottle dilengkapi 2 cap yang dapat diganti sesuai mood-mu!",
-        "excerpt": "Produk Upware dilindungi oleh Upware Lifetime Warranty / Garansi Seumur Hidup Upware. Hal ini berarti, jika produk Upware rusak atau cacat dalam pemakaian normal non komersial (sesuai dengan fungsinya), maka dapat diklaim untuk mendapatkan penggantiannya secara gratis di Business Center terdekat",
-        "price": 399000,
-        "tags": ["upware", "onthego"],
-        "brand": "UpWare",
-        "thumbnail": "https://shop.tupperware.co.id/media/catalog/product/cache/d659501601eaa628c35b4c5676282018/9/2/92fa554ce5c80f812277f2e24692642890b2ec246ea9c6c4f9497daf614cea66.jpeg",
-        "images": [
-          "https://shop.tupperware.co.id/media/catalog/product/cache/d659501601eaa628c35b4c5676282018/0/f/0ffcdba48e66ada62160411acc1a340212a3ab650264572be5e61eedf9577c68.jpeg",
-          "https://shop.tupperware.co.id/media/catalog/product/cache/d659501601eaa628c35b4c5676282018/9/2/92fa554ce5c80f812277f2e24692642890b2ec246ea9c6c4f9497daf614cea66.jpeg"
-        ],
-        "createdAt": "2024-01-22T13:15:24.887Z",
-        "updatedAt": "2024-01-25T18:19:54.047Z"
-      },
-      {
-        "name": "TRULIFE SONIC MIST DIFFUSER WITH GIFT",
-        "slug": "trulife-sonic-mist-diffuser-with-gift",
-        "description": "4 Pengaturan Waktu Pilihan waktu yang fleksibel: 60 menit, 120 menit, 180 menit, dan mode kontinu",
-        "excerpt": "Produk Upware dilindungi oleh Upware Lifetime Warranty / Garansi Seumur Hidup Upware. Hal ini berarti, jika produk Upware rusak atau cacat dalam pemakaian normal non komersial (sesuai dengan fungsinya), maka dapat diklaim untuk mendapatkan penggantiannya secara gratis di Business Center terdekat",
-        "price": 999000,
-        "tags": ["upware", "consumable"],
-        "brand": "UpWare",
-        "thumbnail": "https://shop.tupperware.co.id/media/catalog/product/cache/d659501601eaa628c35b4c5676282018/2/5/25e13d74439e3d27b3548922e3240cc0f186a74b92cde7935e8d18cf2ec3489e.jpeg",
-        "images": [
-          "https://shop.tupperware.co.id/media/catalog/product/cache/d659501601eaa628c35b4c5676282018/3/a/3a00d4ea18f9dbfd273beba87355d5e780b80bda45edb5f2bb1f65ec29446a97.jpeg",
-          "https://shop.tupperware.co.id/media/catalog/product/cache/d659501601eaa628c35b4c5676282018/2/5/25e13d74439e3d27b3548922e3240cc0f186a74b92cde7935e8d18cf2ec3489e.jpeg"
-        ],
-        "createdAt": "2024-01-22T13:15:24.887Z",
-        "updatedAt": "2024-01-25T18:19:54.047Z"
-      },
-      {
-        "name": "TRULIFE ESSENTIAL OIL PEPPERMINT",
-        "slug": "peppermint-coon-balance",
-        "description": "100% Pure Essential Oil dengan aroma Peppermint yang menyegarkan, terbaru dari Trulife by Upware",
-        "excerpt": "Produk Upware dilindungi oleh Upware Lifetime Warranty / Garansi Seumur Hidup Upware. Hal ini berarti, jika produk Upware rusak atau cacat dalam pemakaian normal non komersial (sesuai dengan fungsinya), maka dapat diklaim untuk mendapatkan penggantiannya secara gratis di Business Center terdekat",
-        "price": 420000,
-        "tags": ["upware", "consumable"],
-        "brand": "UpWare",
-        "thumbnail": "https://shop.tupperware.co.id/media/catalog/product/cache/d659501601eaa628c35b4c5676282018/0/d/0d83423b3bc88dad9172383fd77794096ded4ca9c3f488cd93d826f702f6a2b2.jpeg",
-        "images": [
-          "https://shop.tupperware.co.id/media/catalog/product/cache/d659501601eaa628c35b4c5676282018/7/d/7d1075762d1dac1cc60f7da1a65cfd9d20681bf1e7f1041e592306f790114074.jpeg",
-          "https://shop.tupperware.co.id/media/catalog/product/cache/d659501601eaa628c35b4c5676282018/0/d/0d83423b3bc88dad9172383fd77794096ded4ca9c3f488cd93d826f702f6a2b2.jpeg"
-        ],
-        "createdAt": "2024-01-22T13:15:24.887Z",
-        "updatedAt": "2024-01-25T18:19:54.047Z"
-      },
-      {
-        "name": "GOURMET SERVERS 2L (3) WITH GIFT",
-        "slug": "gourmet-servers-2l-3-with-gift",
-        "description": "Satu wadah untuk semua kebutuhan! Cantik saat menyajikan makanan. Praktis untuk menghangatkan dalam microwave. Higienis untuk penyimpanan dalam kulkas.",
-        "excerpt": "Produk Upware dilindungi oleh Upware Lifetime Warranty / Garansi Seumur Hidup Upware. Hal ini berarti, jika produk Upware rusak atau cacat dalam pemakaian normal non komersial (sesuai dengan fungsinya), maka dapat diklaim untuk mendapatkan penggantiannya secara gratis di Business Center terdekat",
-        "price": 630000,
-        "tags": ["upware", "serving"],
-        "brand": "UpWare",
-        "thumbnail": "https://shop.tupperware.co.id/media/catalog/product/cache/d659501601eaa628c35b4c5676282018/8/0/80ac3363efd457fc84171d668f7e97683d89a8121dca6d20c42357a4de8a44b3.jpeg",
-        "images": [
-          "https://shop.tupperware.co.id/media/catalog/product/cache/d659501601eaa628c35b4c5676282018/f/4/f41079de2c4b2b1aa9532c8810631fabed1b35d4acbf1f005ad656b1f07f04d3.jpeg",
-          "https://shop.tupperware.co.id/media/catalog/product/cache/d659501601eaa628c35b4c5676282018/8/0/80ac3363efd457fc84171d668f7e97683d89a8121dca6d20c42357a4de8a44b3.jpeg"
-        ],
-        "createdAt": "2024-01-22T13:15:24.887Z",
-        "updatedAt": "2024-01-25T18:19:54.047Z"
-      },
-      {
-        "name": "PITCHER SET",
-        "slug": "pitcher-set",
-        "description": "Menutup & Mengunci. Tekan tombol dan dorong seal hingga garis batas. Tarik tombol untuk mengunci",
-        "excerpt": "Produk Upware dilindungi oleh Upware Lifetime Warranty / Garansi Seumur Hidup Upware. Hal ini berarti, jika produk Upware rusak atau cacat dalam pemakaian normal non komersial (sesuai dengan fungsinya), maka dapat diklaim untuk mendapatkan penggantiannya secara gratis di Business Center terdekat",
-        "price": 375000,
-        "tags": ["upware", "serving"],
-        "brand": "UpWare",
-        "thumbnail": "https://shop.tupperware.co.id/media/catalog/product/cache/d659501601eaa628c35b4c5676282018/7/2/7289aa3aa253fdcfba447a7db40c656edf8f1d0616c009cdd45fdd287b5dc0da.jpeg",
-        "images": [
-          "https://shop.tupperware.co.id/media/catalog/product/cache/d659501601eaa628c35b4c5676282018/0/4/04e1c917e47b3b1ad533d5743dfe5e2929bede6359b6210d4f526e163d7ca006.jpeg",
-          "https://shop.tupperware.co.id/media/catalog/product/cache/d659501601eaa628c35b4c5676282018/7/2/7289aa3aa253fdcfba447a7db40c656edf8f1d0616c009cdd45fdd287b5dc0da.jpeg"
-        ],
-        "createdAt": "2024-01-22T13:15:24.887Z",
-        "updatedAt": "2024-01-25T18:19:54.047Z"
-      }
-    ]
-  }
-  
+  "users": [],
+  "wishlist": [
+    {
+      "name": "PRESSURE COOKER WITH GIFT",
+      "slug": "pressure-cooker-with-gift",
+      "description": "Alat masak dengan fitur modern dan elegan dari Upware Indonesia.",
+      "excerpt": "Produk Upware dilindungi oleh Upware Lifetime Warranty / Garansi Seumur Hidup Upware. Hal ini berarti, jika produk Upware rusak atau cacat dalam pemakaian normal non komersial (sesuai dengan fungsinya), maka dapat diklaim untuk mendapatkan penggantiannya secara gratis di Business Center terdekat",
+      "price": 6900000,
+      "tags": [
+        "upware",
+        "cookware"
+      ],
+      "brand": "UpWare",
+      "thumbnail": "https://shop.tupperware.co.id/media/catalog/product/cache/d659501601eaa628c35b4c5676282018/c/7/c7bf834eb57657a0c7e48635bb7bc9ba85d21366f0ef8cb45a1a0f1caa3a745d.jpeg",
+      "images": [
+        "https://shop.tupperware.co.id/media/catalog/product/cache/d659501601eaa628c35b4c5676282018/8/e/8e5f45c91b1f35a666fa0699a5809259b8ec0080106ca0ebff07f1fd6001bae5.jpeg",
+        "https://shop.tupperware.co.id/media/catalog/product/cache/d659501601eaa628c35b4c5676282018/c/7/c7bf834eb57657a0c7e48635bb7bc9ba85d21366f0ef8cb45a1a0f1caa3a745d.jpeg"
+      ],
+      "createdAt": "2024-01-22T13:15:24.887Z",
+      "updatedAt": "2024-01-25T18:19:54.047Z"
+    },
+    {
+      "name": "TCHEF FRY PAN",
+      "slug": "tchef-fry-pan",
+      "description": "Memasak semakin menyenangkan dengan TChef Fry Pan",
+      "excerpt": "Produk Upware dilindungi oleh Upware Lifetime Warranty / Garansi Seumur Hidup Upware. Hal ini berarti, jika produk Upware rusak atau cacat dalam pemakaian normal non komersial (sesuai dengan fungsinya), maka dapat diklaim untuk mendapatkan penggantiannya secara gratis di Business Center terdekat",
+      "price": 2200000,
+      "tags": [
+        "upware",
+        "cookware"
+      ],
+      "brand": "UpWare",
+      "thumbnail": "https://shop.tupperware.co.id/media/catalog/product/cache/d659501601eaa628c35b4c5676282018/6/e/6e242bbfa28481ff9184e328722673b9a1a71050b0ffc815c4db19f76a1a6ad0.jpeg",
+      "images": [
+        "https://shop.tupperware.co.id/media/catalog/product/cache/d659501601eaa628c35b4c5676282018/2/b/2be2eb5ddbfff81ff54b031c48cb87b838c6e61ace9ab031efba38e8e3f4e237.jpeg",
+        "https://shop.tupperware.co.id/media/catalog/product/cache/d659501601eaa628c35b4c5676282018/6/e/6e242bbfa28481ff9184e328722673b9a1a71050b0ffc815c4db19f76a1a6ad0.jpeg"
+      ],
+      "createdAt": "2024-01-22T13:15:24.887Z",
+      "updatedAt": "2024-01-25T18:19:54.047Z"
+    }
+  ],
+  "products": [
+    {
+      "name": "PRESSURE COOKER WITH GIFT",
+      "slug": "pressure-cooker-with-gift",
+      "description": "Alat masak dengan fitur modern dan elegan dari Upware Indonesia.",
+      "excerpt": "Produk Upware dilindungi oleh Upware Lifetime Warranty / Garansi Seumur Hidup Upware. Hal ini berarti, jika produk Upware rusak atau cacat dalam pemakaian normal non komersial (sesuai dengan fungsinya), maka dapat diklaim untuk mendapatkan penggantiannya secara gratis di Business Center terdekat",
+      "price": 6900000,
+      "tags": [
+        "upware",
+        "cookware"
+      ],
+      "brand": "UpWare",
+      "thumbnail": "https://shop.tupperware.co.id/media/catalog/product/cache/d659501601eaa628c35b4c5676282018/c/7/c7bf834eb57657a0c7e48635bb7bc9ba85d21366f0ef8cb45a1a0f1caa3a745d.jpeg",
+      "images": [
+        "https://shop.tupperware.co.id/media/catalog/product/cache/d659501601eaa628c35b4c5676282018/8/e/8e5f45c91b1f35a666fa0699a5809259b8ec0080106ca0ebff07f1fd6001bae5.jpeg",
+        "https://shop.tupperware.co.id/media/catalog/product/cache/d659501601eaa628c35b4c5676282018/c/7/c7bf834eb57657a0c7e48635bb7bc9ba85d21366f0ef8cb45a1a0f1caa3a745d.jpeg"
+      ],
+      "createdAt": "2024-01-22T13:15:24.887Z",
+      "updatedAt": "2024-01-25T18:19:54.047Z"
+    },
+    {
+      "name": "TCHEF FRY PAN",
+      "slug": "tchef-fry-pan",
+      "description": "Memasak semakin menyenangkan dengan TChef Fry Pan",
+      "excerpt": "Produk Upware dilindungi oleh Upware Lifetime Warranty / Garansi Seumur Hidup Upware. Hal ini berarti, jika produk Upware rusak atau cacat dalam pemakaian normal non komersial (sesuai dengan fungsinya), maka dapat diklaim untuk mendapatkan penggantiannya secara gratis di Business Center terdekat",
+      "price": 2200000,
+      "tags": [
+        "upware",
+        "cookware"
+      ],
+      "brand": "UpWare",
+      "thumbnail": "https://shop.tupperware.co.id/media/catalog/product/cache/d659501601eaa628c35b4c5676282018/6/e/6e242bbfa28481ff9184e328722673b9a1a71050b0ffc815c4db19f76a1a6ad0.jpeg",
+      "images": [
+        "https://shop.tupperware.co.id/media/catalog/product/cache/d659501601eaa628c35b4c5676282018/2/b/2be2eb5ddbfff81ff54b031c48cb87b838c6e61ace9ab031efba38e8e3f4e237.jpeg",
+        "https://shop.tupperware.co.id/media/catalog/product/cache/d659501601eaa628c35b4c5676282018/6/e/6e242bbfa28481ff9184e328722673b9a1a71050b0ffc815c4db19f76a1a6ad0.jpeg"
+      ],
+      "createdAt": "2024-01-22T13:15:24.887Z",
+      "updatedAt": "2024-01-25T18:19:54.047Z"
+    },
+    {
+      "name": "TWINKLE TUP",
+      "slug": "twinkle-tup",
+      "description": "Snack tetap fresh & higienis berkat seal ketat udara dan cairan",
+      "excerpt": "Produk Upware dilindungi oleh Upware Lifetime Warranty / Garansi Seumur Hidup Upware. Hal ini berarti, jika produk Upware rusak atau cacat dalam pemakaian normal non komersial (sesuai dengan fungsinya), maka dapat diklaim untuk mendapatkan penggantiannya secara gratis di Business Center terdekat",
+      "price": 195000,
+      "tags": [
+        "upware",
+        "kids"
+      ],
+      "brand": "UpWare",
+      "thumbnail": "https://shop.tupperware.co.id/media/catalog/product/cache/d659501601eaa628c35b4c5676282018/3/9/39760283756274c639e717e1beada340852b74d180916eccfef0a941793502b7.jpeg",
+      "images": [
+        "https://shop.tupperware.co.id/media/catalog/product/cache/d659501601eaa628c35b4c5676282018/e/9/e91a853f355f1e42101d0e87e26dfdbb61948362cfa1ba1f10db819b0042c1c8.jpeg",
+        "https://shop.tupperware.co.id/media/catalog/product/cache/d659501601eaa628c35b4c5676282018/3/9/39760283756274c639e717e1beada340852b74d180916eccfef0a941793502b7.jpeg"
+      ],
+      "createdAt": "2024-01-22T13:15:24.887Z",
+      "updatedAt": "2024-01-25T18:19:54.047Z"
+    },
+    {
+      "name": "TWINKLE SIPPY CUP",
+      "slug": "twinkle-sippy-cup",
+      "description": "Training cup untuk bayi 6 bulan ke atas. sekaligus persiapan bayi 6 bulan ke atas memulai MPASI. Berbahan material yang aman dan dengan desain ergonomis sangat nyaman dan sesuai untuk usia bayi",
+      "excerpt": "Produk Upware dilindungi oleh Upware Lifetime Warranty / Garansi Seumur Hidup Upware. Hal ini berarti, jika produk Upware rusak atau cacat dalam pemakaian normal non komersial (sesuai dengan fungsinya), maka dapat diklaim untuk mendapatkan penggantiannya secara gratis di Business Center terdekat",
+      "price": 215000,
+      "tags": [
+        "upware",
+        "kids"
+      ],
+      "brand": "UpWare",
+      "thumbnail": "https://shop.tupperware.co.id/media/catalog/product/cache/d659501601eaa628c35b4c5676282018/7/7/777c7d5d489e85f9257564ddcf15914c73fada809d7d3547316f9cee48fe6e07.jpeg",
+      "images": [
+        "https://shop.tupperware.co.id/media/catalog/product/cache/d659501601eaa628c35b4c5676282018/4/a/4a704b7421c388c061d67d5d8f2be7a8b5e07a33478337697fab3358f24fd292.jpeg",
+        "https://shop.tupperware.co.id/media/catalog/product/cache/d659501601eaa628c35b4c5676282018/7/7/777c7d5d489e85f9257564ddcf15914c73fada809d7d3547316f9cee48fe6e07.jpeg"
+      ],
+      "createdAt": "2024-01-22T13:15:24.887Z",
+      "updatedAt": "2024-01-25T18:19:54.047Z"
+    },
+    {
+      "name": "STYLISH LUNCH SET WITH GIFT",
+      "slug": "stylish-lunch-set-with-gift",
+      "description": "Satu set kotak makan lengkap dalam tas compact berdesain manis, pelengkap lifestyle keseharianmu!",
+      "excerpt": "Produk Upware dilindungi oleh Upware Lifetime Warranty / Garansi Seumur Hidup Upware. Hal ini berarti, jika produk Upware rusak atau cacat dalam pemakaian normal non komersial (sesuai dengan fungsinya), maka dapat diklaim untuk mendapatkan penggantiannya secara gratis di Business Center terdekat",
+      "price": 275000,
+      "tags": [
+        "upware",
+        "onthego"
+      ],
+      "brand": "UpWare",
+      "thumbnail": "https://shop.tupperware.co.id/media/catalog/product/cache/d659501601eaa628c35b4c5676282018/7/9/7910d240d344751332770b6b8174d4fed513bc133134fef2c8cdd1173c1760d5.jpeg",
+      "images": [
+        "https://shop.tupperware.co.id/media/catalog/product/cache/d659501601eaa628c35b4c5676282018/a/4/a431d0c0daf6420a0261b6dee669c3e8f77968f80dbf918bd2f4bb9a3769885b.jpeg",
+        "https://shop.tupperware.co.id/media/catalog/product/cache/d659501601eaa628c35b4c5676282018/7/9/7910d240d344751332770b6b8174d4fed513bc133134fef2c8cdd1173c1760d5.jpeg"
+      ],
+      "createdAt": "2024-01-22T13:15:24.887Z",
+      "updatedAt": "2024-01-25T18:19:54.047Z"
+    },
+    {
+      "name": "FASHION ECO 500 ML (4) WITH STRAP & WITH GIFT",
+      "slug": "fashion-eco-500-ml-4-with-strap-with-gift",
+      "description": "1 botol, 2 gaya Setiap Fashion Eco Bottle dilengkapi 2 cap yang dapat diganti sesuai mood-mu!",
+      "excerpt": "Produk Upware dilindungi oleh Upware Lifetime Warranty / Garansi Seumur Hidup Upware. Hal ini berarti, jika produk Upware rusak atau cacat dalam pemakaian normal non komersial (sesuai dengan fungsinya), maka dapat diklaim untuk mendapatkan penggantiannya secara gratis di Business Center terdekat",
+      "price": 399000,
+      "tags": [
+        "upware",
+        "onthego"
+      ],
+      "brand": "UpWare",
+      "thumbnail": "https://shop.tupperware.co.id/media/catalog/product/cache/d659501601eaa628c35b4c5676282018/9/2/92fa554ce5c80f812277f2e24692642890b2ec246ea9c6c4f9497daf614cea66.jpeg",
+      "images": [
+        "https://shop.tupperware.co.id/media/catalog/product/cache/d659501601eaa628c35b4c5676282018/0/f/0ffcdba48e66ada62160411acc1a340212a3ab650264572be5e61eedf9577c68.jpeg",
+        "https://shop.tupperware.co.id/media/catalog/product/cache/d659501601eaa628c35b4c5676282018/9/2/92fa554ce5c80f812277f2e24692642890b2ec246ea9c6c4f9497daf614cea66.jpeg"
+      ],
+      "createdAt": "2024-01-22T13:15:24.887Z",
+      "updatedAt": "2024-01-25T18:19:54.047Z"
+    },
+    {
+      "name": "TRULIFE SONIC MIST DIFFUSER WITH GIFT",
+      "slug": "trulife-sonic-mist-diffuser-with-gift",
+      "description": "4 Pengaturan Waktu Pilihan waktu yang fleksibel: 60 menit, 120 menit, 180 menit, dan mode kontinu",
+      "excerpt": "Produk Upware dilindungi oleh Upware Lifetime Warranty / Garansi Seumur Hidup Upware. Hal ini berarti, jika produk Upware rusak atau cacat dalam pemakaian normal non komersial (sesuai dengan fungsinya), maka dapat diklaim untuk mendapatkan penggantiannya secara gratis di Business Center terdekat",
+      "price": 999000,
+      "tags": [
+        "upware",
+        "consumable"
+      ],
+      "brand": "UpWare",
+      "thumbnail": "https://shop.tupperware.co.id/media/catalog/product/cache/d659501601eaa628c35b4c5676282018/2/5/25e13d74439e3d27b3548922e3240cc0f186a74b92cde7935e8d18cf2ec3489e.jpeg",
+      "images": [
+        "https://shop.tupperware.co.id/media/catalog/product/cache/d659501601eaa628c35b4c5676282018/3/a/3a00d4ea18f9dbfd273beba87355d5e780b80bda45edb5f2bb1f65ec29446a97.jpeg",
+        "https://shop.tupperware.co.id/media/catalog/product/cache/d659501601eaa628c35b4c5676282018/2/5/25e13d74439e3d27b3548922e3240cc0f186a74b92cde7935e8d18cf2ec3489e.jpeg"
+      ],
+      "createdAt": "2024-01-22T13:15:24.887Z",
+      "updatedAt": "2024-01-25T18:19:54.047Z"
+    },
+    {
+      "name": "TRULIFE ESSENTIAL OIL PEPPERMINT",
+      "slug": "peppermint-coon-balance",
+      "description": "100% Pure Essential Oil dengan aroma Peppermint yang menyegarkan, terbaru dari Trulife by Upware",
+      "excerpt": "Produk Upware dilindungi oleh Upware Lifetime Warranty / Garansi Seumur Hidup Upware. Hal ini berarti, jika produk Upware rusak atau cacat dalam pemakaian normal non komersial (sesuai dengan fungsinya), maka dapat diklaim untuk mendapatkan penggantiannya secara gratis di Business Center terdekat",
+      "price": 420000,
+      "tags": [
+        "upware",
+        "consumable"
+      ],
+      "brand": "UpWare",
+      "thumbnail": "https://shop.tupperware.co.id/media/catalog/product/cache/d659501601eaa628c35b4c5676282018/0/d/0d83423b3bc88dad9172383fd77794096ded4ca9c3f488cd93d826f702f6a2b2.jpeg",
+      "images": [
+        "https://shop.tupperware.co.id/media/catalog/product/cache/d659501601eaa628c35b4c5676282018/7/d/7d1075762d1dac1cc60f7da1a65cfd9d20681bf1e7f1041e592306f790114074.jpeg",
+        "https://shop.tupperware.co.id/media/catalog/product/cache/d659501601eaa628c35b4c5676282018/0/d/0d83423b3bc88dad9172383fd77794096ded4ca9c3f488cd93d826f702f6a2b2.jpeg"
+      ],
+      "createdAt": "2024-01-22T13:15:24.887Z",
+      "updatedAt": "2024-01-25T18:19:54.047Z"
+    },
+    {
+      "name": "GOURMET SERVERS 2L (3) WITH GIFT",
+      "slug": "gourmet-servers-2l-3-with-gift",
+      "description": "Satu wadah untuk semua kebutuhan! Cantik saat menyajikan makanan. Praktis untuk menghangatkan dalam microwave. Higienis untuk penyimpanan dalam kulkas.",
+      "excerpt": "Produk Upware dilindungi oleh Upware Lifetime Warranty / Garansi Seumur Hidup Upware. Hal ini berarti, jika produk Upware rusak atau cacat dalam pemakaian normal non komersial (sesuai dengan fungsinya), maka dapat diklaim untuk mendapatkan penggantiannya secara gratis di Business Center terdekat",
+      "price": 630000,
+      "tags": [
+        "upware",
+        "serving"
+      ],
+      "brand": "UpWare",
+      "thumbnail": "https://shop.tupperware.co.id/media/catalog/product/cache/d659501601eaa628c35b4c5676282018/8/0/80ac3363efd457fc84171d668f7e97683d89a8121dca6d20c42357a4de8a44b3.jpeg",
+      "images": [
+        "https://shop.tupperware.co.id/media/catalog/product/cache/d659501601eaa628c35b4c5676282018/f/4/f41079de2c4b2b1aa9532c8810631fabed1b35d4acbf1f005ad656b1f07f04d3.jpeg",
+        "https://shop.tupperware.co.id/media/catalog/product/cache/d659501601eaa628c35b4c5676282018/8/0/80ac3363efd457fc84171d668f7e97683d89a8121dca6d20c42357a4de8a44b3.jpeg"
+      ],
+      "createdAt": "2024-01-22T13:15:24.887Z",
+      "updatedAt": "2024-01-25T18:19:54.047Z"
+    },
+    {
+      "name": "PITCHER SET",
+      "slug": "pitcher-set",
+      "description": "Menutup & Mengunci. Tekan tombol dan dorong seal hingga garis batas. Tarik tombol untuk mengunci",
+      "excerpt": "Produk Upware dilindungi oleh Upware Lifetime Warranty / Garansi Seumur Hidup Upware. Hal ini berarti, jika produk Upware rusak atau cacat dalam pemakaian normal non komersial (sesuai dengan fungsinya), maka dapat diklaim untuk mendapatkan penggantiannya secara gratis di Business Center terdekat",
+      "price": 375000,
+      "tags": [
+        "upware",
+        "serving"
+      ],
+      "brand": "UpWare",
+      "thumbnail": "https://shop.tupperware.co.id/media/catalog/product/cache/d659501601eaa628c35b4c5676282018/7/2/7289aa3aa253fdcfba447a7db40c656edf8f1d0616c009cdd45fdd287b5dc0da.jpeg",
+      "images": [
+        "https://shop.tupperware.co.id/media/catalog/product/cache/d659501601eaa628c35b4c5676282018/0/4/04e1c917e47b3b1ad533d5743dfe5e2929bede6359b6210d4f526e163d7ca006.jpeg",
+        "https://shop.tupperware.co.id/media/catalog/product/cache/d659501601eaa628c35b4c5676282018/7/2/7289aa3aa253fdcfba447a7db40c656edf8f1d0616c009cdd45fdd287b5dc0da.jpeg"
+      ],
+      "createdAt": "2024-01-22T13:15:24.887Z",
+      "updatedAt": "2024-01-25T18:19:54.047Z"
+    }
+  ]
+}

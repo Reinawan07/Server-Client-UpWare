@@ -1,9 +1,9 @@
 import CardProduct from "@/components/CardProduct";
 import Search from "@/components/Search";
-import { Products } from "@/db/models/product";
+import { ProductsModel } from "@/db/models/product";
 
 
-async function getProducts(): Promise<Products[]> {
+async function getProducts(): Promise<ProductsModel[]> {
     const response = await fetch("http://localhost:3001/products",{cache: "no-store"});
     return response.json();
 }

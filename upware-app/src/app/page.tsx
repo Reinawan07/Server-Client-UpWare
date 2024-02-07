@@ -1,8 +1,10 @@
+import Banner from "@/components/Banner";
+import DetailInformasi from "@/components/DetailInformasi";
 import SeeAllProduct from "@/components/SeeAllProduct";
-import Banner from "@/components/banner";
-import DetailInformasi from "@/components/detailinformasi";
+ 
 
-export default function Home() {
+export default async function Home() {
+
   return (
     <>
       <Banner />

@@ -6,26 +6,26 @@
 
 Silahkan setup project aplikasi kamu:
 
-- [ ] Pilih tema sesuai kesepakatan bersama  instructor, tuliskan dalam README github kamu
-- [ ] Membuat layout aplikasi sesuai tema yang dipilih
-- [ ] Membuat initial data/seeder sesuai struktur data yang ditentukan (Kalian bisa check `db.json` sebagai referensi atau bisa digunakan sebagai data awal)
-  - [ ] Halaman auth
-    - [ ] Register
-    - [ ] Login
-  - [ ] Halaman home
-    - [ ] Komponen Banner
-    - [ ] Komponen Detail info Ecommerce
-    - [ ] Komponen Featured Product (50-10 product) + “see-all”
-  - [ ] Halaman product
-    - [ ] Komponen List Product
-    - [ ] Komponen Search
-    - [ ] Komponen Pagination
-    - [ ] Komponen Add to wishlist
-  - [ ] Halaman detail product
-    - [ ] Komponen Add to wishlist
-  - [ ] Halaman Wishlist
-    - [ ] Komponen list Wishlist (bisa menggunakan card yang sama dengan halaman list product)
-    - [ ] Komponen Remove Wishlist
+- [x] Pilih tema sesuai kesepakatan bersama  instructor, tuliskan dalam README github kamu
+- [x] Membuat layout aplikasi sesuai tema yang dipilih
+- [x] Membuat initial data/seeder sesuai struktur data yang ditentukan (Kalian bisa check `db.json` sebagai referensi atau bisa digunakan sebagai data awal)
+  - [x] Halaman auth
+    - [x] Register
+    - [x] Login
+  - [x] Halaman home
+    - [x] Komponen Banner
+    - [x] Komponen Detail info Ecommerce
+    - [x] Komponen Featured Product (50-10 product) + “see-all”
+  - [x] Halaman product
+    - [x] Komponen List Product
+    - [x] Komponen Search
+    - [x] Komponen Pagination
+    - [x] Komponen Add to wishlist
+  - [x] Halaman detail product
+    - [x] Komponen Add to wishlist
+  - [x] Halaman Wishlist
+    - [x] Komponen list Wishlist (bisa menggunakan card yang sama dengan halaman list product)
+    - [x] Komponen Remove Wishlist
 
 ## W2D2
 

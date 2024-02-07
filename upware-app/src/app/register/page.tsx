@@ -71,7 +71,7 @@ export default function Register() {
 
                         <div className="relative bg-base-300 rounded-md">
                             <img
-                                src="https://images.unsplash.com/photo-1585083969600-495ee7e3604b?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                src="https://shop.tupperware.co.id/media/catalog/product/cache/d659501601eaa628c35b4c5676282018/3/a/3a98b3cf5ccc2b7576309243d7634c67647de5046a37ebb5c7bee9863d0d109d.jpeg"
                                 alt="img"
                                 className="w-[420px] h-full hidden rounded-r-2xl md:block object-cover"
                             />

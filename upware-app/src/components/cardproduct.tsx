@@ -1,19 +1,38 @@
+import Link from "next/link";
 import ButtonWishlist from "./ButtonWishlist";
 
-export default function CardProduct() {
+interface Products {
+    id: string;
+    name: string;
+    price: number;
+    thumbnail: string;
+    excerpt: string;
+    description: string;
+    slug: string;
+    tags: string[];
+    images: string[];
+    createdAt: Date;
+    updatedAt: Date;
+}
+
+export default function CardProduct({ product }: { product: Products }) {
     return (
-        <div className="card bg-base-100 shadow-xl w-full md:w-80">
-            <figure>
-                <img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" />
-            </figure>
-            <div className="card-body">
-                <h2 className="card-title">Shoes!</h2>
-                <p>If a dog chews shoes whose shoes does he choose?</p>
-                <div className="flex justify-between items-center">
-                    <span className="title-font font-medium text-2xl">$58.00</span>
-                    <ButtonWishlist />
+        <>
+            <Link href={`/product/${product.slug}`} className="card bg-base-100 shadow-xl w-full md:w-80">
+                <figure>
+                    <img
+                        src={product.thumbnail}
+                        alt={product.name} />
+                </figure>
+                <div className="card-body">
+                    <h2 className="card-title">{product.name}</h2>
+                    <p>{product.excerpt}</p>
+                    <div className="flex justify-between items-center">
+                        <span className="title-font font-semibold text-l">Rp. {product.price}</span>
+                        <ButtonWishlist />
+                    </div>
                 </div>
-            </div>
-        </div>
+            </Link>
+        </>
     )
 }

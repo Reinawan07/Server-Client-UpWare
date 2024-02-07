@@ -1,5 +1,6 @@
 import { ObjectId } from "mongodb";
 import { database } from "../config/mongodb";
+import { hashText } from "../helpers/hash";
 
 export interface UserInterface {
     _id: ObjectId;
@@ -27,8 +28,8 @@ class UserModel {
     }
 
     static async register(newUser: NewInput) {
-       const result = await this.getCollection().insertOne(newUser);
-       console.log(result);
+       const result = await this.getCollection().insertOne({
+        ...newUser, password: hashText(newUser.password)});
        
        return {
             _id: result.insertedId,

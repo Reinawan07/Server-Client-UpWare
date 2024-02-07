@@ -25,15 +25,15 @@ export default function Navbar() {
         <>
             <div className="navbar bg-base-100 border-b shadow-xl mb-5 sticky top-0 z-50">
                 <div className="navbar-start">
-                    <Link href="/" className="btn btn-ghost text-xl"><b>UpWare</b></Link>
+                    <Link href="/" className="hover:text-primary font-bold focus:outline-none focus:shadow-outline transition duration-300 text-xl"><b>UpWare</b></Link>
                 </div>
-                <div className="navbar-center">
-                    <Link href="/product" className="btn btn-ghost text-lg">Product</Link>
-                    <Link href="/wishlist" className="btn btn-ghost text-lg">Wishlist</Link>
+                <div className="navbar-center gap-7">
+                    <Link href="/product" className="hover:text-primary font-bold focus:outline-none focus:shadow-outline transition duration-300">Product</Link>
+                    <Link href="/wishlist" className="hover:text-primary font-bold focus:outline-none focus:shadow-outline transition duration-300">Wishlist</Link>
                 </div>
                 <div className="navbar-end">
 
-                    <label className="swap swap-rotate mx-4">
+                    <label className="swap swap-rotate mx-4 btn btn-ghost btn-circle">
                         <input
                             type="checkbox"
                             className="theme-controller"

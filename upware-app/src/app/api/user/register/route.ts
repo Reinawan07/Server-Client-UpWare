@@ -6,7 +6,7 @@ export async function POST(request: Request){
     const result = await UserModel.register(body);
 
     return Response.json({
-        data: {},
+        data: result,
     });
     
 }

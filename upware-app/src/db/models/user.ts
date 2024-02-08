@@ -21,6 +21,7 @@ export interface UserInterface {
 
 export type NewInput = Omit<UserInterface, "_id">;
 
+
 class UserModel {
     static getCollection() {
         return database.collection("users");
@@ -43,10 +44,10 @@ class UserModel {
     }
 
     static async getUserByEmail(email: string) {
-        return await this.getCollection().findOne({
-            email: email
-        }) as UserInterface | null;
+        return await this.getCollection()
+            .findOne({ email }) as UserInterface | null;
     }
+
 
     static async register(newUser: NewInput) {
         const existingUserByUsername = await this.getUserByUsername(newUser.username);

@@ -1,7 +1,12 @@
 import CardProduct from "@/components/CardProduct";
 import Search from "@/components/Search";
 import { ProductsInterface } from "@/db/models/product";
-
+import type { Metadata } from 'next'
+ 
+export const metadata: Metadata = {
+  title: 'UpWare - Products',
+  description: 'UpWare Products',
+}
 type MyResponse = {
     data: ProductsInterface[];
 };

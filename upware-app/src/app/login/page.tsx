@@ -3,6 +3,12 @@ import RootLayout from "../layout";
 import { redirect } from "next/navigation";
 import ClientFlashComponent from "@/components/ClientFlashComponent";
 import { cookies } from "next/headers";
+import type { Metadata } from 'next'
+ 
+export const metadata: Metadata = {
+  title: 'UpWare - Login',
+  description: 'UpWare Login',
+}
 
 type MyResponse = {
     message: string;

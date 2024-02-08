@@ -1,8 +1,37 @@
 import ButtonWishlist from "@/components/ButtonWishlist";
-import { Products } from "@/db/models/product";
+import { ProductsInterface } from "@/db/models/product";
+import type { Metadata, ResolvingMetadata } from 'next'
+
+type Props = {
+    params: { slug: string }
+    searchParams: { [key: string]: string | string[] | undefined }
+}
+
+export async function generateMetadata(
+    { params, searchParams }: Props,
+    parent: ResolvingMetadata
+): Promise<Metadata> {
+    // read route params
+    const slug = params.slug
+
+    // fetch data
+    const product = await fetch(`http://localhost:3001/products/${slug}`).then((res) => res.json()) as ProductsInterface
+
+    // optionally access and extend (rather than replace) parent metadata
+    const previousImages = (await parent).openGraph?.images || []
+
+    return {
+        title: "UpWare - " + product.name,
+        description: "UpWare - " + product.description,
+        openGraph: {
+            images: ['/some-specific-page-image.jpg', ...previousImages],
+        },
+    }
+}
 
 
-async function getProductBySlug(slug: string): Promise<Products | null> {
+
+async function getProductBySlug(slug: string): Promise<ProductsInterface | null> {
     try {
         const response = await fetch(`http://localhost:3001/products/${slug}`, {
             cache: "no-store",

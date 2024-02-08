@@ -1,13 +1,17 @@
 import ClientFlashComponent from "@/components/ClientFlashComponent";
 import Link from "next/link";
 import { redirect } from "next/navigation";
-
+import type { Metadata } from 'next'
+ 
+export const metadata: Metadata = {
+  title: 'UpWare - Register',
+  description: 'UpWare Register',
+}
 
 export type MyResponse<T = {}> = {
     message: string
     data?: T
 };
-
 
 export default function Register() {
     const handleRegister = async (formData: FormData) => {

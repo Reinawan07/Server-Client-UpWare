@@ -1,5 +1,11 @@
 import ListWishlist from "@/components/ListWishlist";
 import { WishlistInterface } from "@/db/models/wishlist";
+import type { Metadata } from 'next'
+ 
+export const metadata: Metadata = {
+  title: 'UpWare - Wishlist',
+  description: 'UpWare Wishlist',
+}
 
 
 async function getWishlist(): Promise<WishlistInterface[]> {

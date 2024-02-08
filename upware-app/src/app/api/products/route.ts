@@ -1,6 +1,9 @@
+import ProductModel from "@/db/models/product";
+import { NextResponse } from "next/server";
+
 export async function GET(request: Request) {
-    return Response.json({
-        msg: "SIUUUUUU",
-    });
-    
+    const products = await ProductModel.getAll();
+    return NextResponse.json({
+        data: products,
+    })
 }

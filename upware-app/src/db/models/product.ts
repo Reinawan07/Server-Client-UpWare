@@ -1,4 +1,5 @@
 import { ObjectId } from "mongodb";
+import { database } from "../config/mongodb";
 
 export interface ProductsInterface {
     _id: ObjectId;
@@ -13,3 +14,15 @@ export interface ProductsInterface {
     createdAt: Date;
     updatedAt: Date;
 }
+
+class ProductModel {
+    static getCollection() {
+        return database.collection("products");
+    }
+
+    static async getAll() {
+        return await this.getCollection().find().toArray() as ProductsInterface[]
+    }
+}
+
+export default ProductModel

@@ -1,9 +1,10 @@
 import UserModel from "@/db/models/user";
+import { NextResponse } from "next/server";
 
 export async function GET(
     request: Request, {params}: { params: {id: string}}) {
     const user = await UserModel.getById(params.id);
-    return Response.json({
+    return NextResponse.json({
         data: user,
     })
 }

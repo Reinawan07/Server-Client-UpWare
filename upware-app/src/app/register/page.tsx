@@ -1,10 +1,43 @@
+import ClientFlashComponent from "@/components/ClientFlashComponent";
 import Link from "next/link";
+import { redirect } from "next/navigation";
 
 export default function Register() {
+    const handleRegister = async (formData: FormData) => {
+        'use server';
+        const name = formData.get("name");
+        const username = formData.get("username");
+        const email = formData.get("email");
+        const password = formData.get("password");
+
+        try {
+            const response = await fetch("http://localhost:3000/api/user/register", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify({ name, username, email, password }),
+            });
+
+            if (!response.ok) {
+                const result = await response.json();
+                throw new Error(result.error || "Registration failed");
+            }
+
+            return redirect("/login");
+        } catch (error) {
+            console.error("Registration failed:", error);
+            redirect("/register");
+            // redirect("/register?error=" + error.message);
+        }
+
+    }
+
     return (
         <>
             <div className="flex items-center justify-center min-h-screen">
-                <form>
+                <ClientFlashComponent />
+                <form action={handleRegister}>
                     <div className="relative flex flex-col m-6 space-y-8 bg-base-200 shadow-2xl rounded-2xl md:flex-row md:space-y-0">
                         <div className="flex flex-col justify-center p-8 md:p-14">
                             <span className="mb-3 text-4xl font-bold">Register</span>
@@ -20,6 +53,7 @@ export default function Register() {
                                         id="name"
                                         name="name"
                                         placeholder="Name"
+                                        required
                                     />
                                 </div>
                                 <div className="mb-4 md:mr-2 md:mb-0">
@@ -30,6 +64,7 @@ export default function Register() {
                                         id="username"
                                         name="username"
                                         placeholder="Username"
+                                        required
                                     />
                                 </div>
                             </div>
@@ -42,20 +77,22 @@ export default function Register() {
                                         id="email"
                                         name="email"
                                         placeholder="Email"
+                                        required
                                     />
                                 </div>
                                 <div className="mb-4 md:mr-2 md:mb-0">
                                     <span className="mb-2 text-md">Password</span>
                                     <input
                                         className="w-full p-2 rounded-md border"
-                                        type="text"
+                                        type="password"
                                         id="password"
                                         name="password"
-                                        placeholder="password"
+                                        placeholder="Password"
+                                        required
                                     />
                                 </div>
                             </div>
-                            
+
                             <button
                                 type="submit"
                                 className="w-full mt-4 bg-primary p-2 rounded-lg mb-6 hover:bg-secondary"
@@ -64,7 +101,7 @@ export default function Register() {
                             </button>
 
                             <div className="text-center text-bg-body-secondary ">
-                                Have account?
+                                Have an account?
                                 <Link href="/login" className="font-bold mx-2 text-bg-primary hover:text-secondary">Login</Link>
                             </div>
                         </div>

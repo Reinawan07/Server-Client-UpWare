@@ -19,7 +19,7 @@ export interface UserInterface {
     password: string;
 };
 
-type NewInput = Omit<UserInterface, "_id">;
+export type NewInput = Omit<UserInterface, "_id">;
 
 class UserModel {
     static getCollection() {

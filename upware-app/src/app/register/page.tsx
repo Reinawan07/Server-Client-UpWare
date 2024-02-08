@@ -2,6 +2,11 @@ import ClientFlashComponent from "@/components/ClientFlashComponent";
 import Link from "next/link";
 import { redirect } from "next/navigation";
 
+export type MyResponse<T = {}> = {
+    message: string
+    data?: T
+};
+
 export default function Register() {
     const handleRegister = async (formData: FormData) => {
         'use server';
@@ -20,18 +25,16 @@ export default function Register() {
             });
 
             if (!response.ok) {
-                const result = await response.json();
-                throw new Error(result.error || "Registration failed");
+                const result: MyResponse = await response.json();
+                throw new Error(result.message || "Registration failed");
             }
 
             return redirect("/login");
         } catch (error) {
             console.error("Registration failed:", error);
             redirect("/register");
-            // redirect("/register?error=" + error.message);
         }
-
-    }
+    };
 
     return (
         <>

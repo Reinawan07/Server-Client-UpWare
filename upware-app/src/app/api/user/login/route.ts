@@ -3,6 +3,7 @@ import { compareTextWithHash } from "@/db/helpers/hash";
 import { createToken } from "@/lib/jwt";
 import { NextResponse } from "next/server";
 import { z } from "zod";
+import {cookies} from 'next/headers';
 
 const userSchema = z.object({
     email: z.string().email(),
@@ -13,24 +14,28 @@ type LoginInput = z.infer<typeof userSchema>;
 
 export async function POST(request: Request) {
     try {
+        // 1. tangkap body
         const body: LoginInput = await request.json();
-
+        // 2. validasi email dan password
         const validation = userSchema.safeParse(body);
         if (!validation.success) {
             throw validation.error;
         }
-
+        // 3. validasi emailnya ada di db atau tidak
+        // 4. validasi passwordnya sesuai atau tidak
         const user = await UserModel.getUserByEmail(body.email);
         if (!user || !compareTextWithHash(body.password, user.password)) {
             return NextResponse.json({
                 message: 'Invalid email or password'
             }, { status: 400 });
         }
-
+        // 5. generate access token
         const accessToken = createToken({
             _id: user._id,
             email: user.email
         });
+
+        cookies().set('Authorization', `Bearer ${accessToken}`)
 
         return NextResponse.json({ accessToken }, { status: 200 });
     } catch (error) {

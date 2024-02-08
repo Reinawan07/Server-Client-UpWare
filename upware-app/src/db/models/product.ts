@@ -23,6 +23,12 @@ class ProductModel {
     static async getAll() {
         return await this.getCollection().find().toArray() as ProductsInterface[]
     }
+
+    static async getBySlug(slug: string) {
+        return await this.getCollection().findOne({
+            slug
+        }) as ProductModel | null;
+    }
 }
 
 export default ProductModel

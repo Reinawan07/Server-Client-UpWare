@@ -2,6 +2,7 @@ import Link from "next/link";
 import RootLayout from "../layout";
 import { redirect } from "next/navigation";
 import ClientFlashComponent from "@/components/ClientFlashComponent";
+import { cookies } from "next/headers";
 
 type MyResponse = {
     message: string;
@@ -28,7 +29,9 @@ export default function Login() {
             return redirect("/login?error=" + result.message);
         }
 
-        return redirect("/products");
+        cookies().set('Authorization', `Bearer ${result.accessToken}`)
+
+        return redirect("/product");
 
     }
 
@@ -40,10 +43,10 @@ export default function Login() {
                     <div className="relative flex flex-col m-6 space-y-8 bg-base-200 shadow-2xl rounded-2xl md:flex-row md:space-y-0">
                         <div className="flex flex-col justify-center p-8 md:p-14">
                             <span className="mb-3 text-4xl font-bold">Login</span>
-                            <ClientFlashComponent />
                             <span className="font-light text-bg-body-secondary">
                                 Welcome to <b>UpWare</b>
                             </span>
+                            <ClientFlashComponent />
                             <div className="py-4">
                                 <span className="mb-2 text-md">Email</span>
                                 <input
@@ -52,6 +55,7 @@ export default function Login() {
                                     name="email"
                                     id="email"
                                     placeholder="Email"
+                                    required
                                 />
                             </div>
                             <div className="py-4">
@@ -62,6 +66,7 @@ export default function Login() {
                                     id="password"
                                     className="w-full p-2 rounded-md border"
                                     placeholder="Password"
+                                    required
                                 />
                             </div>
                             <button

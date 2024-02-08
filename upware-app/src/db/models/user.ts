@@ -64,7 +64,13 @@ class UserModel {
 
         const parsed = userSchema.safeParse(newUser);
         if (!parsed.success) {
-            throw parsed.error;
+            return NextResponse.json(
+                {
+                    message: "Validation error",
+                    error: parsed.error.errors,
+                },
+                { status: 400 }
+            );
         }
 
         const result = await this.getCollection().insertOne({

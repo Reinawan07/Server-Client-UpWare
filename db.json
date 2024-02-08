@@ -1,45 +1,6 @@
 {
   "users": [],
-  "wishlist": [
-    {
-      "name": "PRESSURE COOKER WITH GIFT",
-      "slug": "pressure-cooker-with-gift",
-      "description": "Alat masak dengan fitur modern dan elegan dari Upware Indonesia.",
-      "excerpt": "Produk Upware dilindungi oleh Upware Lifetime Warranty / Garansi Seumur Hidup Upware. Hal ini berarti, jika produk Upware rusak atau cacat dalam pemakaian normal non komersial (sesuai dengan fungsinya), maka dapat diklaim untuk mendapatkan penggantiannya secara gratis di Business Center terdekat",
-      "price": 6900000,
-      "tags": [
-        "upware",
-        "cookware"
-      ],
-      "brand": "UpWare",
-      "thumbnail": "https://shop.tupperware.co.id/media/catalog/product/cache/d659501601eaa628c35b4c5676282018/c/7/c7bf834eb57657a0c7e48635bb7bc9ba85d21366f0ef8cb45a1a0f1caa3a745d.jpeg",
-      "images": [
-        "https://shop.tupperware.co.id/media/catalog/product/cache/d659501601eaa628c35b4c5676282018/8/e/8e5f45c91b1f35a666fa0699a5809259b8ec0080106ca0ebff07f1fd6001bae5.jpeg",
-        "https://shop.tupperware.co.id/media/catalog/product/cache/d659501601eaa628c35b4c5676282018/c/7/c7bf834eb57657a0c7e48635bb7bc9ba85d21366f0ef8cb45a1a0f1caa3a745d.jpeg"
-      ],
-      "createdAt": "2024-01-22T13:15:24.887Z",
-      "updatedAt": "2024-01-25T18:19:54.047Z"
-    },
-    {
-      "name": "TCHEF FRY PAN",
-      "slug": "tchef-fry-pan",
-      "description": "Memasak semakin menyenangkan dengan TChef Fry Pan",
-      "excerpt": "Produk Upware dilindungi oleh Upware Lifetime Warranty / Garansi Seumur Hidup Upware. Hal ini berarti, jika produk Upware rusak atau cacat dalam pemakaian normal non komersial (sesuai dengan fungsinya), maka dapat diklaim untuk mendapatkan penggantiannya secara gratis di Business Center terdekat",
-      "price": 2200000,
-      "tags": [
-        "upware",
-        "cookware"
-      ],
-      "brand": "UpWare",
-      "thumbnail": "https://shop.tupperware.co.id/media/catalog/product/cache/d659501601eaa628c35b4c5676282018/6/e/6e242bbfa28481ff9184e328722673b9a1a71050b0ffc815c4db19f76a1a6ad0.jpeg",
-      "images": [
-        "https://shop.tupperware.co.id/media/catalog/product/cache/d659501601eaa628c35b4c5676282018/2/b/2be2eb5ddbfff81ff54b031c48cb87b838c6e61ace9ab031efba38e8e3f4e237.jpeg",
-        "https://shop.tupperware.co.id/media/catalog/product/cache/d659501601eaa628c35b4c5676282018/6/e/6e242bbfa28481ff9184e328722673b9a1a71050b0ffc815c4db19f76a1a6ad0.jpeg"
-      ],
-      "createdAt": "2024-01-22T13:15:24.887Z",
-      "updatedAt": "2024-01-25T18:19:54.047Z"
-    }
-  ],
+  "wishlist": [],
   "products": [
     {
       "name": "PRESSURE COOKER WITH GIFT",
@@ -299,6 +260,42 @@
       "images": [
         "https://shop.tupperware.co.id/media/catalog/product/cache/d659501601eaa628c35b4c5676282018/2/5/255182a54ea8646e923d0127e5c813254a2796ddfd1e596b9d8d6d6437158444.jpeg",
         "https://shop.tupperware.co.id/media/catalog/product/cache/d659501601eaa628c35b4c5676282018/6/1/613e133713362125b6ac509ac5444df8dcdd8118db720427c8b0de3764c2ba9a.jpeg"
+      ],
+      "createdAt": "2024-01-22T13:15:24.887Z",
+      "updatedAt": "2024-01-25T18:19:54.047Z"
+    },
+    {
+      "name": "LARGE MOSAIC CANISTER",
+      "slug": "mosaic-canister-large-peach",
+      "description": "Pas Untuk Semua! Wadah Snack Favorit Dengan Ragam Ukuran Semua Keluarga",
+      "price": 195000,
+      "tags": [
+        "upware",
+        "canister"
+      ],
+      "brand": "UpWare",
+      "thumbnail": "https://shop.tupperware.co.id/media/catalog/product/cache/d659501601eaa628c35b4c5676282018/9/2/9254f2dc41ef9e25717d4fac204f57148bb2ad0279ecb414b92fc05c0a02e5f9.jpeg",
+      "images": [
+        "https://shop.tupperware.co.id/media/catalog/product/cache/d659501601eaa628c35b4c5676282018/9/e/9ec18d70c4c163bee37c9486af18f5d0c6988a0ee4277adba34640d10422e564.jpeg",
+        "https://shop.tupperware.co.id/media/catalog/product/cache/d659501601eaa628c35b4c5676282018/9/2/9254f2dc41ef9e25717d4fac204f57148bb2ad0279ecb414b92fc05c0a02e5f9.jpeg"
+      ],
+      "createdAt": "2024-01-22T13:15:24.887Z",
+      "updatedAt": "2024-01-25T18:19:54.047Z"
+    },
+    {
+      "name": "PAKET 2 SET SUPER DECO 4.1L(2)",
+      "slug": "paket-2-set-super-deco-4-1l-2",
+      "description": "Persediaan Snack Berlimpah, Suasana Rumah Ceria!",
+      "price": 499000,
+      "tags": [
+        "upware",
+        "canister"
+      ],
+      "brand": "UpWare",
+      "thumbnail": "https://shop.tupperware.co.id/media/catalog/product/cache/d659501601eaa628c35b4c5676282018/a/b/ab8b89ed195fdbb312f8db4f39b257d92773931b00af3062c007ea84cb555d26.jpeg",
+      "images": [
+        "https://shop.tupperware.co.id/media/catalog/product/cache/d659501601eaa628c35b4c5676282018/8/9/89d3b07bf56b3cf2341327a0ae6cd9a94d3f109459244b1e3b38ba2ede43c7a1.jpeg",
+        "https://shop.tupperware.co.id/media/catalog/product/cache/d659501601eaa628c35b4c5676282018/a/b/ab8b89ed195fdbb312f8db4f39b257d92773931b00af3062c007ea84cb555d26.jpeg"
       ],
       "createdAt": "2024-01-22T13:15:24.887Z",
       "updatedAt": "2024-01-25T18:19:54.047Z"

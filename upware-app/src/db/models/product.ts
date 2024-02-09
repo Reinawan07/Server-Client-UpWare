@@ -27,7 +27,7 @@ class ProductModel {
     static async getBySlug(slug: string) {
         return await this.getCollection().findOne({
             slug
-        }) as ProductModel | null;
+        }) as ProductsInterface | null;
     }
 }
 

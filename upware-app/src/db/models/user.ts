@@ -48,29 +48,17 @@ class UserModel {
             .findOne({ email }) as UserInterface | null;
     }
 
-
     static async register(newUser: NewInput) {
         const existingUserByUsername = await this.getUserByUsername(newUser.username);
         const existingUserByEmail = await this.getUserByEmail(newUser.email);
 
         if (existingUserByUsername || existingUserByEmail) {
-            return NextResponse.json(
-                {
-                    message: "Username or email already exists"
-                },
-                { status: 400 }
-            )
+            throw { message: "Username or email already exists", status: 400 };
         }
 
         const parsed = userSchema.safeParse(newUser);
         if (!parsed.success) {
-            return NextResponse.json(
-                {
-                    message: "Validation error",
-                    error: parsed.error.errors,
-                },
-                { status: 400 }
-            );
+            throw parsed.error
         }
 
         const result = await this.getCollection().insertOne({

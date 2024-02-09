@@ -1,39 +1,40 @@
+'use client'
 import ButtonWishlist from "@/components/ButtonWishlist";
 import { ProductsInterface } from "@/db/models/product";
-import type { Metadata, ResolvingMetadata } from 'next'
+// import type { Metadata, ResolvingMetadata } from 'next'
 
-type Props = {
-    params: { slug: string }
-    searchParams: { [key: string]: string | string[] | undefined }
-}
+// type Props = {
+//     params: { slug: string }
+//     searchParams: { [key: string]: string | string[] | undefined }
+// }
 
-export async function generateMetadata(
-    { params, searchParams }: Props,
-    parent: ResolvingMetadata
-): Promise<Metadata> {
-    // read route params
-    const slug = params.slug
+// export async function generateMetadata(
+//     { params, searchParams }: Props,
+//     parent: ResolvingMetadata
+// ): Promise<Metadata> {
+//     // read route params
+//     const slug = params.slug
 
-    // fetch data
-    const product = await fetch(`http://localhost:3001/products/${slug}`).then((res) => res.json()) as ProductsInterface
+//     // fetch data
+//     const product = await fetch(`http://localhost:3000/api/products/${slug}`).then((res) => res.json()) as ProductsInterface
 
-    // optionally access and extend (rather than replace) parent metadata
-    const previousImages = (await parent).openGraph?.images || []
+//     // optionally access and extend (rather than replace) parent metadata
+//     const previousImages = (await parent).openGraph?.images || []
 
-    return {
-        title: "UpWare - " + product.name,
-        description: "UpWare - " + product.description,
-        openGraph: {
-            images: ['/some-specific-page-image.jpg', ...previousImages],
-        },
-    }
-}
+//     return {
+//         title: "UpWare - " + product.name,
+//         description: "UpWare - " + product.description,
+//         openGraph: {
+//             images: ['/some-specific-page-image.jpg', ...previousImages],
+//         },
+//     }
+// }
 
 
 
 async function getProductBySlug(slug: string): Promise<ProductsInterface | null> {
     try {
-        const response = await fetch(`http://localhost:3001/products/${slug}`, {
+        const response = await fetch(`http://localhost:3000/api/products/${slug}`, {
             cache: "no-store",
         });
 
@@ -52,19 +53,16 @@ async function getProductBySlug(slug: string): Promise<ProductsInterface | null>
 export default async function DetailProduct({ params }: { params: { slug: string } }) {
     const product = await getProductBySlug(params.slug);
 
-    if (!product) {
-        return <div>Product not found</div>;
-    }
-
     return (
         <>
             <section className=" body-font overflow-hidden">
                 <div className="container px-5 py-24 mx-auto">
                     <div className="lg:w-4/5 mx-auto flex flex-wrap">
                         <img alt="ecommerce" className="lg:w-1/2 w-full object-cover object-center rounded border" src="https://www.whitmorerarebooks.com/pictures/medium/2465.jpg" />
+                        
                         <div className="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
                             <h2 className="text-sm title-font tracking-widest">BRAND NAME</h2>
-                            <h1 className=" text-3xl title-font font-medium mb-1">The Catcher in the Rye</h1>
+                            <h1 className=" text-3xl title-font font-medium mb-1">{product?.name}</h1>
                             <div className="flex mb-4">
                                 <span className="flex items-center">
                                     <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" className="w-4 h-4 text-red-500" viewBox="0 0 24 24">

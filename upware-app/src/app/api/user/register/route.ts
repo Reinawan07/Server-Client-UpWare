@@ -8,7 +8,7 @@ export async function POST(request: Request) {
         const result = await UserModel.register(body);
 
         return NextResponse.json({ data: result });
-    } catch (error) {
+    } catch (error:Error|any) {
 
         if (error instanceof ZodError) {
             console.log(error);
@@ -17,6 +17,13 @@ export async function POST(request: Request) {
                 error: errMessage
             }, {
                 status: 400
+            })
+        } else if (typeof error === "object") {
+            console.log(error);
+            return NextResponse.json({
+                error: error?.message || "Internal Server Error"
+            }, {
+                status: error?.status || 500
             })
         }
     }

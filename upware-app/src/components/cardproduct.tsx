@@ -29,7 +29,7 @@ export default function CardProduct({ product }: { product: ProductsInterface })
                     <p className="text-sm overflow-hidden h-16">{description}</p> 
                     <div className="flex justify-between items-center">
                         <span className="title-font font-semibold text-l">{formatRupiah(product.price)}</span>
-                        <ButtonWishlist />
+                        <ButtonWishlist productId={product._id} />
                     </div>
                 </div>
             </div>

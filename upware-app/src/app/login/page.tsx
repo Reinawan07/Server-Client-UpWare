@@ -21,7 +21,7 @@ export default function Login() {
         const email = FormData.get("email");
         const password = FormData.get("password");
 
-        const response = await fetch("http://localhost:3000/api/user/login", {
+        const response = await fetch(process.env.NEXT_PUBLIC_BASE_URL + "/user/login", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",

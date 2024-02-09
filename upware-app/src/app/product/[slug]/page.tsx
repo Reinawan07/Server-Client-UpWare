@@ -34,7 +34,7 @@ import { ProductsInterface } from "@/db/models/product";
 
 async function getProductBySlug(slug: string): Promise<ProductsInterface | null> {
     try {
-        const response = await fetch(`http://localhost:3000/api/products/${slug}`, {
+        const response = await fetch(process.env.NEXT_PUBLIC_BASE_URL + `/products/${slug}`, {
             cache: "no-store",
         });
 

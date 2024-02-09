@@ -12,7 +12,7 @@ type MyResponse = {
 };
 
 async function getProducts(): Promise<MyResponse> {
-    const data = await fetch("http://localhost:3000/api/products",{
+    const data = await fetch(process.env.NEXT_PUBLIC_BASE_URL + "/products",{
         cache: "no-store",
     });
     return await data.json();

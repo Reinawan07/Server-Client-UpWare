@@ -9,9 +9,9 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "UpWare",
   description: "UpWare E-Commerce",
-  openGraph: {
-    images: "./Logo.png",
-  }
+  // openGraph: {
+  //   images: "./Logo.png",
+  // }
 };
 
 export default function RootLayout({

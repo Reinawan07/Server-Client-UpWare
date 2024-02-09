@@ -10,6 +10,7 @@ export const metadata: Metadata = {
 
 export type MyResponse<T = {}> = {
     message: string
+    error: string
     data?: T
 };
 
@@ -30,9 +31,10 @@ export default function Register() {
         })
 
         const result: MyResponse = await response.json();
+        
 
         if (!response.ok) {
-            return redirect("/register?error=" + result.message);
+            return redirect("/register?error=" + result.error);
         }
 
         return redirect("/login");

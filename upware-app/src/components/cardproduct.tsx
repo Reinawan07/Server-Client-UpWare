@@ -2,6 +2,11 @@ import Link from "next/link";
 import ButtonWishlist from "./ButtonWishlist";
 import { ProductsInterface } from "@/db/models/product";
 
+
+function formatRupiah(number: number) {
+    return new Intl.NumberFormat('id-ID', { style: 'currency', currency: 'IDR', minimumFractionDigits: 0 }).format(number);
+}
+
 export default function CardProduct({ product }: { product: ProductsInterface }) {
     const maxDescriptionLength = 100;
 
@@ -23,7 +28,7 @@ export default function CardProduct({ product }: { product: ProductsInterface })
                     <h2 className="card-title">{product.name}</h2>
                     <p className="text-sm overflow-hidden h-16">{description}</p> 
                     <div className="flex justify-between items-center">
-                        <span className="title-font font-semibold text-l">Rp. {product.price}</span>
+                        <span className="title-font font-semibold text-l">{formatRupiah(product.price)}</span>
                         <ButtonWishlist />
                     </div>
                 </div>

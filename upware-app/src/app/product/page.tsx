@@ -21,6 +21,7 @@ async function getProducts(): Promise<MyResponse> {
 
 export default async function Product() {
     const {data} = await getProducts();
+    
 
     return (
         <div className="w-full min-h-screen flex flex-col gap-10 justify-start items-start px-5 md:px-20 pt-7 mb-10">

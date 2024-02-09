@@ -3,8 +3,6 @@ import { NextResponse } from 'next/server';
 
 export async function GET(req: Request) {
 	try {
-		console.log('>>> GET wishlist');
-
 		const userId = req.headers.get('x-user-id') as string;
 		console.log(userId, 'userId wishlist');
 

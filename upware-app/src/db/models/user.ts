@@ -2,7 +2,6 @@ import { ObjectId } from "mongodb";
 import { database } from "../config/mongodb";
 import { hashText } from "../helpers/hash";
 import { z } from "zod";
-import { NextResponse } from "next/server";
 
 const userSchema = z.object({
     name: z.string(),

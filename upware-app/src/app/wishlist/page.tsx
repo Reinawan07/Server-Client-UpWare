@@ -9,9 +9,8 @@ export const metadata: Metadata = {
 
 
 async function getWishlist(): Promise<WishlistInterface[]> {
-    const response = await fetch(process.env.NEXT_PUBLIC_BASE_URL + "/wishlist", { cache: "no-store" });
+    const response = await fetch(process.env.NEXT_PUBLIC_BASE_URL + "/api/wishlist", { cache: "no-store" });
     return response.json();
-
 }
 
 

@@ -1,4 +1,3 @@
-// import jsonwebtoken from 'jsonwebtoken';
 import jwt, { JwtPayload } from 'jsonwebtoken';
 import * as jose from 'jose';
 

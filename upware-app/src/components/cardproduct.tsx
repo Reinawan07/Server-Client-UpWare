@@ -4,7 +4,7 @@ import { ProductsInterface } from "@/db/models/product";
 
 
 function formatRupiah(number: number) {
-    return new Intl.NumberFormat('id-ID', { style: 'currency', currency: 'IDR', minimumFractionDigits: 0 }).format(number);
+    return new Intl.NumberFormat('id-ID', { style: 'currency', currency: 'IDR' }).format(number);
 }
 
 export default function CardProduct({ product }: { product: ProductsInterface }) {

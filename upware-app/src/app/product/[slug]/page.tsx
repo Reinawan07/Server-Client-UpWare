@@ -9,14 +9,10 @@ function formatRupiah(number: number | undefined) {
     
 }
 
-type MyResponse = {
-    data: ProductsInterface[];
-};
-
 
 async function getProductBySlug(slug: string): Promise<{ data: ProductsInterface } | null>  {
     try {
-        const response = await fetch(process.env.NEXT_PUBLIC_BASE_URL + `/products/${slug}`, {
+        const response = await fetch(process.env.NEXT_PUBLIC_BASE_URL + `/api/products/${slug}`, {
             method: "GET",
             
         });

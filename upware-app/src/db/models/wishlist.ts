@@ -41,6 +41,17 @@ class WishlistModel {
         return response as WishlistInterface[];
     }
 
+    static async addWislist(data: NewWishlist) {
+        const currentDate = new Date();
+        const response = await this.getCollection()
+            .insertOne({
+                userId: new ObjectId(data.userId),
+                productId: new ObjectId(data.productId),
+                createdAt: currentDate,
+                updatedAt: currentDate,
+            });
+        return response;
+    }
 }
 
 export default WishlistModel

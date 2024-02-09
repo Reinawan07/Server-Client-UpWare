@@ -1,5 +1,4 @@
 import Link from "next/link";
-import RootLayout from "../layout";
 import { redirect } from "next/navigation";
 import ClientFlashComponent from "@/components/ClientFlashComponent";
 import { cookies } from "next/headers";
@@ -21,7 +20,7 @@ export default function Login() {
         const email = FormData.get("email");
         const password = FormData.get("password");
 
-        const response = await fetch(process.env.NEXT_PUBLIC_BASE_URL + "/user/login", {
+        const response = await fetch(process.env.NEXT_PUBLIC_BASE_URL + "/api/user/login", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
@@ -43,7 +42,6 @@ export default function Login() {
 
     return (
         <>
-            {/* <RootLayout showNavbar={false} showFooter={false}> */}
             <div className="flex items-center justify-center min-h-screen">
                 <form action={handleLogin}>
                     <div className="relative flex flex-col m-6 space-y-8 bg-base-200 shadow-2xl rounded-2xl md:flex-row md:space-y-0">
@@ -99,7 +97,6 @@ export default function Login() {
                     </div>
                 </form>
             </div>
-            {/* </RootLayout> */}
         </>
     );
 }

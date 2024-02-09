@@ -29,6 +29,12 @@ class ProductModel {
             slug
         }) as ProductsInterface | null;
     }
+
+    static async getById(id: string) {
+        return await this.getCollection().findOne({
+            _id: new ObjectId(id)
+        }) as ProductsInterface | null
+    }
 }
 
 export default ProductModel

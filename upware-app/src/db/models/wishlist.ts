@@ -1,12 +1,17 @@
 import { ObjectId } from "mongodb";
 import { database } from "../config/mongodb";
+import { ProductsInterface } from "./product";
 
-export interface WishlistInterface {
+export interface NewWishlist {
+    userId: string;
+    productId: string;
+}
+
+export interface WishlistInterface extends NewWishlist {
     _id: ObjectId;
-    userId: ObjectId;
-    productId: ObjectId;
-    createdAt: string;
-    updatedAt: string;
+    createdAt: Date;
+    updatedAt: Date;
+    product: ProductsInterface;
 }
 
 class WishlistModel {
@@ -14,15 +19,28 @@ class WishlistModel {
         return database.collection("wishlists");
     }
 
-    static async getAll() {
-        return await this.getCollection().find().toArray() as WishlistInterface[]
+    static async getWishlists(userId: string): Promise<WishlistInterface[]> {
+        const response = await this.getCollection().aggregate([
+            { $match: { userId: new ObjectId(userId) } },
+            {
+                $lookup: {
+                    from: 'Products',
+                    foreignField: '_id',
+                    localField: 'productId',
+                    as: 'product',
+                },
+            },
+            {
+                $unwind: {
+                    path: '$product',
+                    preserveNullAndEmptyArrays: true,
+                },
+            },
+        ]).toArray();
+
+        return response as WishlistInterface[];
     }
 
-    static async getBySlug(slug: string) {
-        return await this.getCollection().findOne({
-            slug
-        }) as WishlistInterface | null;
-    }
 }
 
 export default WishlistModel

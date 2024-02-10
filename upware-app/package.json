@@ -12,6 +12,7 @@
     "@types/bcryptjs": "^2.4.6",
     "@types/js-cookie": "^3.0.6",
     "@types/jsonwebtoken": "^9.0.5",
+    "@uidotdev/usehooks": "^2.4.1",
     "bcryptjs": "^2.4.3",
     "jose": "^5.2.1",
     "js-cookie": "^3.0.5",

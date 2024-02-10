@@ -4,7 +4,7 @@ import { NextResponse } from 'next/server';
 export async function GET(req: Request) {
 	try {
 		const userId = req.headers.get('x-user-id') as string;
-		console.log(userId, 'userId wishlist');
+		// console.log(userId, 'userId wishlist');
 
 		const wishlist: WishlistModel[] = await WishlistModel.getWishlists(userId);
 

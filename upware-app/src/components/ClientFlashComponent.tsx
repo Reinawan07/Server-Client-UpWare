@@ -8,7 +8,7 @@ export default function ClientFlashComponent() {
     return (
         <>
             {errorMessage && (
-                <p className="animate-pulse rounded bg-red-500 text-white text-center"> {/* Menambahkan class "text-center" di sini */}
+                <p className="animate-pulse rounded bg-red-500 text-white text-center">
                     {errorMessage}
                 </p>
             )}

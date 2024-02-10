@@ -4,10 +4,10 @@ import { ProductsInterface } from "@/db/models/product";
 
 
 function formatRupiah(number: number | undefined) {
-    if(!number) return 0 
+    if (!number) return 0
     return new Intl.NumberFormat('id-ID', { style: 'currency', currency: 'IDR', minimumFractionDigits: 0 }).format(number);
-     
- }
+
+}
 
 export default function CardProduct({ product }: { product: ProductsInterface }) {
     const maxDescriptionLength = 100;
@@ -27,11 +27,15 @@ export default function CardProduct({ product }: { product: ProductsInterface })
                     </Link>
                 </figure>
                 <div className="card-body">
-                    <h2 className="card-title">{product.name}</h2>
-                    <p className="text-sm overflow-hidden h-16">{description}</p> 
+                    <Link href={`/product/${product.slug}`}>
+                        <h2 className="card-title">{product.name}</h2>
+                    </Link>
+                    <Link href={`/product/${product.slug}`}>
+                        <p className="text-sm overflow-hidden h-16">{description}</p>
+                    </Link>
                     <div className="flex justify-between items-center">
                         <span className="title-font font-semibold text-l">{formatRupiah(product.price)}</span>
-                        
+
                         <ButtonWishlist productId={product._id} />
                     </div>
                 </div>

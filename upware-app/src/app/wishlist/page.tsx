@@ -8,7 +8,6 @@ export const metadata: Metadata = {
   description: 'UpWare Wishlist',
 }
 
-
 async function getWishlist(): Promise<{ data: WishlistInterface[]}> {
     const response = await fetch(process.env.NEXT_PUBLIC_BASE_URL + "/api/wishlist", {
         method: "GET",
@@ -19,10 +18,9 @@ async function getWishlist(): Promise<{ data: WishlistInterface[]}> {
     return response.json();
 }
 
-
 export default async function Wishlist() {
     const wishlists = await getWishlist();
-// console.log(wishlists, 'wishlists <<<<<<<<<<<<');;
+console.log(wishlists, 'wishlists <<<<<<<<<<<<');;
 
     return (
         <>

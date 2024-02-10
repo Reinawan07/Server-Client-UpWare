@@ -61,7 +61,6 @@ class WishlistModel {
             });
         return response;
     }
-
 }
 
 export default WishlistModel

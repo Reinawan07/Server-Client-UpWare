@@ -1,5 +1,5 @@
 'use client'
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import CardProduct from "@/components/CardProduct";
 import Search from "@/components/Search";
 import { ProductsInterface } from "@/db/models/product";
@@ -20,25 +20,29 @@ export default function Product() {
     }, [searchQuery]);
 
     useEffect(() => {
-        if (debouncedSearchQuery) {
-            fetchData();
-        } else {
-            fetchData();
-        }
+        fetchData();
     }, [debouncedSearchQuery, page]);
 
     const fetchData = async () => {
         setLoading(true);
         try {
-            const response = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/products?search=${debouncedSearchQuery}&page=${page}`);
+            const response = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/products?search=${debouncedSearchQuery}&page=${page}`,
+                { cache: 'no-store' });
             if (!response.ok) {
                 throw new Error("Failed to fetch data");
             }
             const newData: { data: ProductsInterface[] } = await response.json();
-            const updatedData = page > 1 ? [...data, ...newData.data] : newData.data;
-            setData(updatedData);
-            setFilteredData(updatedData);
-            setError(null);
+
+            if (newData.data.length > 0 && !searchQuery) {
+                setData(prevData => [...prevData, ...newData.data]);
+                setFilteredData(prevData => [...prevData, ...newData.data]);
+                setPage(prevPage => prevPage + 1);
+            } else if (searchQuery) {
+                setData(newData.data);
+                setFilteredData(newData.data);
+            } else {
+                setError(null);
+            }
         } catch (error) {
             console.error("Error fetching data:", error);
             setError("Failed to fetch data. Please try again.");
@@ -47,17 +51,22 @@ export default function Product() {
         }
     };
 
-    const handleSearch = (query: string) => {
-        setSearchQuery(query.toLowerCase());
+    const handleSearch = (e: React.ChangeEvent<HTMLInputElement>) => {
+        setSearchQuery(e.target.value);
+        setData([]);
+        setFilteredData([]);
     };
 
     const fetchMoreData = () => {
-        setPage(page + 1);
+        const shouldFetchData = window.innerHeight + window.scrollY >= document.body.offsetHeight - 500;
+        if (shouldFetchData) {
+            setPage(prevPage => prevPage + 1);
+        }
     };
 
     return (
         <div className="w-full min-h-screen flex flex-col gap-10 justify-start items-start px-5 md:px-20 pt-7 mb-10">
-            <Search handleSearch={handleSearch} />
+            <Search handleSearch={handleSearch} searchQuery={searchQuery} />
             <InfiniteScroll
                 dataLength={filteredData.length}
                 next={fetchMoreData}

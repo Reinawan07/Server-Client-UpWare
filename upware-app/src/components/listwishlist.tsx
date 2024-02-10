@@ -4,6 +4,8 @@ import { WishlistInterface } from "@/db/models/wishlist";
 import Swal from 'sweetalert2'
 import { useRouter } from 'next/navigation';
 
+export const dynamic = 'force-dynamic'
+
 function formatRupiah(number: number | undefined) {
     if (!number) return 0;
     return new Intl.NumberFormat('id-ID', { style: 'currency', currency: 'IDR', minimumFractionDigits: 0 }).format(number);

@@ -2,6 +2,7 @@ import ButtonWishlist from "@/components/ButtonWishlist";
 import { ProductsInterface } from "@/db/models/product";
 import type { Metadata, ResolvingMetadata } from 'next'
 
+export const dynamic = 'force-dynamic'
 
 function formatRupiah(number: number | undefined) {
    if(!number) return 0 

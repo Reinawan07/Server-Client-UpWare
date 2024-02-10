@@ -3,7 +3,9 @@ import { redirect } from "next/navigation";
 import ClientFlashComponent from "@/components/ClientFlashComponent";
 import { cookies } from "next/headers";
 import type { Metadata } from 'next'
- 
+
+export const dynamic = 'force-dynamic'
+
 export const metadata: Metadata = {
   title: 'UpWare - Login',
   description: 'UpWare Login',
@@ -22,6 +24,7 @@ export default function Login() {
 
         const response = await fetch(process.env.NEXT_PUBLIC_BASE_URL + "/api/user/login", {
             method: "POST",
+            cache: "no-store",
             body: JSON.stringify({ email, password }),
         })
 

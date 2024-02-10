@@ -3,6 +3,8 @@ import { WishlistInterface } from "@/db/models/wishlist";
 import type { Metadata } from 'next'
 import { cookies } from "next/headers";
  
+export const dynamic = 'force-dynamic'
+
 export const metadata: Metadata = {
   title: 'UpWare - Wishlist',
   description: 'UpWare Wishlist',

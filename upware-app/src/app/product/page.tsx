@@ -6,6 +6,8 @@ import { ProductsInterface } from "@/db/models/product";
 import { useDebounce } from '@uidotdev/usehooks';
 import InfiniteScroll from 'react-infinite-scroll-component';
 
+export const dynamic = 'force-dynamic'
+
 export default function Product() {
     const [data, setData] = useState<ProductsInterface[]>([]);
     const [loading, setLoading] = useState<boolean>(false);

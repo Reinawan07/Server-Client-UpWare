@@ -3,6 +3,8 @@ import Link from "next/link";
 import { redirect } from "next/navigation";
 import type { Metadata } from 'next'
  
+export const dynamic = 'force-dynamic'
+
 export const metadata: Metadata = {
   title: 'UpWare - Register',
   description: 'UpWare Register',
@@ -24,6 +26,7 @@ export default function Register() {
 
         const response = await fetch(process.env.NEXT_PUBLIC_BASE_URL + "/api/user/register", {
             method: "POST",
+            cache: "no-store",
             headers: {
                 "Content-Type": "application/json",
             },

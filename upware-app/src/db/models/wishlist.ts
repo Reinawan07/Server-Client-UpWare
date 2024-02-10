@@ -52,6 +52,16 @@ class WishlistModel {
             });
         return response;
     }
+
+    static async deleteWishlist(data: NewWishlist) {
+        const response = await this.getCollection()
+            .deleteOne({
+                userId: new ObjectId(data.userId),
+                productId: new ObjectId(data.productId),
+            });
+        return response;
+    }
+
 }
 
 export default WishlistModel

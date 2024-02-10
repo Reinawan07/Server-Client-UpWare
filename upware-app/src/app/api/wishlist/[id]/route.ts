@@ -59,3 +59,35 @@ export async function POST(
     }
 }
 
+
+
+export async function DELETE(
+    req: Request,
+    { params }: { params: { id: string } }
+) {
+    try {
+        const { id } = params;
+        const userId = req.headers.get('x-user-id') as string;
+
+        await WishlistModel.deleteWishlist({ productId: id, userId });
+
+        return NextResponse.json(
+            {
+                message: 'Success to delete wishlist',
+            },
+            {
+                status: 200,
+            }
+        );
+    } catch (error) {
+        console.error('Error deleting wishlist:', error);
+        return NextResponse.json(
+            {
+                message: 'Internal Server Error',
+            },
+            {
+                status: 500,
+            }
+        );
+    }
+}

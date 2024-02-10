@@ -22,7 +22,7 @@ async function getWishlist(): Promise<{ data: WishlistInterface[]}> {
 
 export default async function Wishlist() {
     const wishlists = await getWishlist();
-console.log(wishlists, 'wishlists <<<<<<<<<<<<');;
+// console.log(wishlists, 'wishlists <<<<<<<<<<<<');;
 
     return (
         <>

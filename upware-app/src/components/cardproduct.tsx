@@ -3,9 +3,11 @@ import ButtonWishlist from "./ButtonWishlist";
 import { ProductsInterface } from "@/db/models/product";
 
 
-function formatRupiah(number: number) {
-    return new Intl.NumberFormat('id-ID', { style: 'currency', currency: 'IDR' }).format(number);
-}
+function formatRupiah(number: number | undefined) {
+    if(!number) return 0 
+    return new Intl.NumberFormat('id-ID', { style: 'currency', currency: 'IDR', minimumFractionDigits: 0 }).format(number);
+     
+ }
 
 export default function CardProduct({ product }: { product: ProductsInterface }) {
     const maxDescriptionLength = 100;

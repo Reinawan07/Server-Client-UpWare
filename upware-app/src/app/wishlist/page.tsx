@@ -1,6 +1,7 @@
 import ListWishlist from "@/components/ListWishlist";
 import { WishlistInterface } from "@/db/models/wishlist";
 import type { Metadata } from 'next'
+import { cookies } from "next/headers";
  
 export const metadata: Metadata = {
   title: 'UpWare - Wishlist',
@@ -8,14 +9,20 @@ export const metadata: Metadata = {
 }
 
 
-async function getWishlist(): Promise<WishlistInterface[]> {
-    const response = await fetch(process.env.NEXT_PUBLIC_BASE_URL + "/api/wishlist", { cache: "no-store" });
+async function getWishlist(): Promise<{ data: WishlistInterface[]}> {
+    const response = await fetch(process.env.NEXT_PUBLIC_BASE_URL + "/api/wishlist", {
+        method: "GET",
+        headers: {
+            Cookie: cookies().toString(),
+        },
+        cache: "no-store" });
     return response.json();
 }
 
 
 export default async function Wishlist() {
     const wishlists = await getWishlist();
+console.log(wishlists, 'wishlists <<<<<<<<<<<<');;
 
     return (
         <>
@@ -32,8 +39,8 @@ export default async function Wishlist() {
                             <th></th>
                         </tr>
                     </thead>
-                    {wishlists.map((wishlist) => (
-                        <ListWishlist wishlist={wishlist} />
+                    {wishlists?.data?.map((data: WishlistInterface) => (
+                        <ListWishlist wishlist={data} />
                     ))}
 
                 </table>

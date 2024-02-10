@@ -24,7 +24,7 @@ class WishlistModel {
             { $match: { userId: new ObjectId(userId) } },
             {
                 $lookup: {
-                    from: 'Products',
+                    from: 'products',
                     foreignField: '_id',
                     localField: 'productId',
                     as: 'product',

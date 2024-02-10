@@ -28,12 +28,12 @@ console.log(wishlists, 'wishlists <<<<<<<<<<<<');;
                 <table className="table">
                     {/* head */}
                     <thead>
-                        <tr>
+                        <tr className="text-l">
 
-                            <th>Name</th>
-                            <th>Deskription</th>
-                            <th>Price</th>
-                            <th>Action</th>
+                            <th><b>Name</b></th>
+                            <th><b>Deskription</b></th>
+                            <th><b>Price</b></th>
+                            <th><b>Action</b></th>
                             <th></th>
                         </tr>
                     </thead>

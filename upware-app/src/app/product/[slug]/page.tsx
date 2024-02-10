@@ -119,7 +119,7 @@ export default async function DetailProduct({ params }: { params: { slug: string
                             </div>
                             <div className="flex justify-between items-center">
                                 <span className="title-font font-medium text-2xl">{formatRupiah(product?.data?.price)}</span>
-                                <ButtonWishlist productId={productId} />
+                                {/* <ButtonWishlist productId={product?.data?.id} /> */}
                             </div>
                         </div>
                     </div>
